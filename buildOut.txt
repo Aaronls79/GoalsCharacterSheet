@@ -1,0 +1,112 @@
+NAnt 0.90 (Build 0.90.3780.0; release; 5/8/2010)
+Copyright (C) 2001-2010 Gerry Shaw
+http://nant.sourceforge.net
+
+Buildfile: file:///C:/Users/Aaron/Documents/AaronApps/GoalsCharacterSheet/GoalsCharacterSheet.build
+Target framework: Microsoft .NET Framework 2.0
+Target(s) specified: test 
+
+ [property] Target framework changed to "Microsoft .NET Framework 3.5".
+
+compile:
+
+  [msbuild] C:\Users\Aaron\Documents\AaronApps\GoalsCharacterSheet\src\Web\Web.csproj(408,32): error MSB4066: The attribute "AfterTargets" in element <Target> is unrecognized.
+  [msbuild] Web\Web.csproj : Solution file warning MSB4122: Scanning project dependencies for project "Web\Web.csproj" failed. The attribute "AfterTargets" in element <Target> is unrecognized.  C:\Users\Aaron\Documents\AaronApps\GoalsCharacterSheet\src\Web\Web.csproj
+  [msbuild] Build started 4/12/2014 11:17:54 PM.
+  [msbuild] Project "C:\Users\Aaron\Documents\AaronApps\GoalsCharacterSheet\src\GoalsCharacterSheet.sln" on node 0 (default targets).
+  [msbuild]   Building solution configuration "Automated|Any CPU".
+  [msbuild] Project "C:\Users\Aaron\Documents\AaronApps\GoalsCharacterSheet\src\GoalsCharacterSheet.sln" (1) is building "C:\Users\Aaron\Documents\AaronApps\GoalsCharacterSheet\src\Core\Core.csproj" (2) on node 0 (default targets).
+  [msbuild] Project file contains ToolsVersion="4.0", which is not supported by this version of MSBuild. Treating the project as if it had ToolsVersion="3.5".
+  [msbuild] PrepareForBuild:
+  [msbuild]   Creating directory "..\..\build\".
+  [msbuild]   Creating directory "obj\Automated\".
+  [msbuild] Entities\GCSModelMapper.Designer.cs(91,16): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild] Entities\GCSModelMapper.Designer.cs(102,17): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild] Entities\GCSModelMapper.Designer.cs(107,16): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild] Entities\GCSModelMapper.Designer.cs(118,17): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild] Entities\GCSModelMapper.Designer.cs(123,16): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild] Entities\GCSModelMapper.Designer.cs(134,17): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild] Entities\GCSModelMapper.Designer.cs(139,16): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild] Entities\GCSModelMapper.Designer.cs(150,17): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild] Entities\GCSModelMapper.Designer.cs(155,16): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild] Entities\GCSModelMapper.Designer.cs(166,17): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild] Entities\GCSModelMapper.Designer.cs(171,16): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild] Entities\GCSModelMapper.Designer.cs(182,17): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild] Entities\GCSModelMapper.Designer.cs(187,16): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild] Entities\GCSModelMapper.Designer.cs(198,17): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild] Entities\GCSModelMapper.Designer.cs(203,16): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild] Entities\GCSModelMapper.Designer.cs(214,17): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild] Entities\GCSModelMapper.Designer.cs(219,16): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild] Entities\GCSModelMapper.Designer.cs(230,17): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild] Entities\GCSModelMapper.Designer.cs(235,16): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild] Entities\GCSModelMapper.Designer.cs(246,17): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild] Entities\GCSModelMapper.Designer.cs(251,16): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild] Entities\GCSModelMapper.Designer.cs(262,17): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild] Entities\GCSModelMapper.Designer.cs(267,16): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild] Entities\GCSModelMapper.Designer.cs(278,17): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild] Entities\GCSModelMapper.Designer.cs(283,16): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild] Entities\GCSModelMapper.Designer.cs(294,17): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild] Entities\GCSModelMapper.Designer.cs(299,16): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild] Entities\GCSModelMapper.Designer.cs(310,17): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild] Entities\GCSModelMapper.Designer.cs(315,16): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild] Entities\GCSModelMapper.Designer.cs(326,17): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild] Done Building Project "C:\Users\Aaron\Documents\AaronApps\GoalsCharacterSheet\src\Core\Core.csproj" (default targets) -- FAILED.
+  [msbuild] Done Building Project "C:\Users\Aaron\Documents\AaronApps\GoalsCharacterSheet\src\GoalsCharacterSheet.sln" (default targets) -- FAILED.
+  [msbuild] 
+  [msbuild] Build FAILED.
+  [msbuild] 
+  [msbuild] "C:\Users\Aaron\Documents\AaronApps\GoalsCharacterSheet\src\GoalsCharacterSheet.sln" (default target) (1) ->
+  [msbuild]   Web\Web.csproj : Solution file warning MSB4122: Scanning project dependencies for project "Web\Web.csproj" failed. The attribute "AfterTargets" in element <Target> is unrecognized.  C:\Users\Aaron\Documents\AaronApps\GoalsCharacterSheet\src\Web\Web.csproj
+  [msbuild] 
+  [msbuild] 
+  [msbuild]   C:\Users\Aaron\Documents\AaronApps\GoalsCharacterSheet\src\Web\Web.csproj(408,32): error MSB4066: The attribute "AfterTargets" in element <Target> is unrecognized.
+  [msbuild] 
+  [msbuild] 
+  [msbuild] "C:\Users\Aaron\Documents\AaronApps\GoalsCharacterSheet\src\GoalsCharacterSheet.sln" (default target) (1) ->
+  [msbuild] "C:\Users\Aaron\Documents\AaronApps\GoalsCharacterSheet\src\Core\Core.csproj" (default target) (2) ->
+  [msbuild] (CoreCompile target) -> 
+  [msbuild]   Entities\GCSModelMapper.Designer.cs(91,16): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild]   Entities\GCSModelMapper.Designer.cs(102,17): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild]   Entities\GCSModelMapper.Designer.cs(107,16): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild]   Entities\GCSModelMapper.Designer.cs(118,17): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild]   Entities\GCSModelMapper.Designer.cs(123,16): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild]   Entities\GCSModelMapper.Designer.cs(134,17): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild]   Entities\GCSModelMapper.Designer.cs(139,16): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild]   Entities\GCSModelMapper.Designer.cs(150,17): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild]   Entities\GCSModelMapper.Designer.cs(155,16): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild]   Entities\GCSModelMapper.Designer.cs(166,17): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild]   Entities\GCSModelMapper.Designer.cs(171,16): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild]   Entities\GCSModelMapper.Designer.cs(182,17): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild]   Entities\GCSModelMapper.Designer.cs(187,16): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild]   Entities\GCSModelMapper.Designer.cs(198,17): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild]   Entities\GCSModelMapper.Designer.cs(203,16): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild]   Entities\GCSModelMapper.Designer.cs(214,17): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild]   Entities\GCSModelMapper.Designer.cs(219,16): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild]   Entities\GCSModelMapper.Designer.cs(230,17): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild]   Entities\GCSModelMapper.Designer.cs(235,16): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild]   Entities\GCSModelMapper.Designer.cs(246,17): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild]   Entities\GCSModelMapper.Designer.cs(251,16): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild]   Entities\GCSModelMapper.Designer.cs(262,17): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild]   Entities\GCSModelMapper.Designer.cs(267,16): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild]   Entities\GCSModelMapper.Designer.cs(278,17): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild]   Entities\GCSModelMapper.Designer.cs(283,16): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild]   Entities\GCSModelMapper.Designer.cs(294,17): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild]   Entities\GCSModelMapper.Designer.cs(299,16): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild]   Entities\GCSModelMapper.Designer.cs(310,17): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild]   Entities\GCSModelMapper.Designer.cs(315,16): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild]   Entities\GCSModelMapper.Designer.cs(326,17): error CS0246: The type or namespace name 'ObjectSet' could not be found (are you missing a using directive or an assembly reference?)
+  [msbuild] 
+  [msbuild]     1 Warning(s)
+  [msbuild]     31 Error(s)
+  [msbuild] 
+  [msbuild] Time Elapsed 00:00:04.53
+
+BUILD FAILED
+
+C:\Users\Aaron\Documents\AaronApps\GoalsCharacterSheet\GoalsCharacterSheet.build(12,4):
+Failed to start MSBuild.
+    C:\Users\Aaron\Documents\AaronApps\GoalsCharacterSheet\GoalsCharacterSheet.build(12,4):
+    External Program Failed: C:\Windows\Microsoft.NET\Framework\v3.5\msbuild.exe (return code was 1)
+
+Total time: 5.6 seconds.
+
