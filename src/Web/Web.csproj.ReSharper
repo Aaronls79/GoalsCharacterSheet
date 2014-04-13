@@ -1,5 +1,0 @@
-<Configuration>
-  <NamespaceFolders>
-    <SkipFolder>B659BB4A-7144-47AC-A98A-3B8063C6E0A9/d:App_Start</SkipFolder>
-  </NamespaceFolders>
-</Configuration>

@@ -1,6 +1,0 @@
-C:\Users\asprague\SkyDrive\AaronApps\GoalsCharacterSheet\src\UnitTests\bin\Debug\AaronSprague.GoalsCharacterSheet.UnitTests.dll
-C:\Users\asprague\SkyDrive\AaronApps\GoalsCharacterSheet\src\UnitTests\bin\Debug\AaronSprague.GoalsCharacterSheet.UnitTests.pdb
-C:\Users\asprague\SkyDrive\AaronApps\GoalsCharacterSheet\src\UnitTests\bin\Debug\NUnit.framework.dll
-C:\Users\asprague\SkyDrive\AaronApps\GoalsCharacterSheet\src\UnitTests\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache
-C:\Users\asprague\SkyDrive\AaronApps\GoalsCharacterSheet\src\UnitTests\obj\Debug\AaronSprague.GoalsCharacterSheet.UnitTests.dll
-C:\Users\asprague\SkyDrive\AaronApps\GoalsCharacterSheet\src\UnitTests\obj\Debug\AaronSprague.GoalsCharacterSheet.UnitTests.pdb
