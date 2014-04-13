@@ -1,0 +1,24 @@
+﻿@using GoalsCharacterSheet.Web.Models.Contracts;
+@using GoalsCharacterSheet.Web.Runtime;
+
+@model IDisplay
+<dl id="@string.Format("{0}Details", ControllerName) class="row dl-horizontal">
+    <dt style="display: none;">Id</dt>
+    <dt style="display: none;" id="DetailId">@Model.Id</dt>
+    @if (Model.Fields.ContainsKey("Name"))
+    {
+        <dt>Name</dt>
+        <dd>@Model.Fields["Name"]</dd> 
+    }
+    @foreach (var key in Model.Fields.Keys)
+    {
+        if (key == "Name" || 
+            Model.Fields[key] == null ||
+            string.IsNullOrWhiteSpace(Model.Fields[key].ToString()))
+        {
+            continue;
+        }
+        <dt>@key.ToSpacedString()</dt>
+        <dd>@Html.Raw(Model.Fields[key])</dd>
+    }
+</dl>

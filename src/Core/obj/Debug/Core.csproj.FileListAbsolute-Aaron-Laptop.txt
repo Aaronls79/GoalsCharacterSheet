@@ -1,0 +1,5 @@
+C:\Users\Aaron\SkyDrive\AaronApps\GoalsCharacterSheet\src\Core\bin\Debug\GoalsCharacterSheet.Core.dll.config
+C:\Users\Aaron\SkyDrive\AaronApps\GoalsCharacterSheet\src\Core\bin\Debug\GoalsCharacterSheet.Core.dll
+C:\Users\Aaron\SkyDrive\AaronApps\GoalsCharacterSheet\src\Core\bin\Debug\GoalsCharacterSheet.Core.pdb
+C:\Users\Aaron\SkyDrive\AaronApps\GoalsCharacterSheet\src\Core\obj\Debug\GoalsCharacterSheet.Core.dll
+C:\Users\Aaron\SkyDrive\AaronApps\GoalsCharacterSheet\src\Core\obj\Debug\GoalsCharacterSheet.Core.pdb

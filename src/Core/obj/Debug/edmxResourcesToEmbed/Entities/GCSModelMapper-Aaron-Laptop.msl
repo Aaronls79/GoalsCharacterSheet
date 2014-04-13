@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EntitiesStoreContainer" CdmEntityContainer="GCSDatabaseEntities">
+    <EntitySetMapping Name="CharacterEquipments">
+      <EntityTypeMapping TypeName="Entities.CharacterEquipment">
+        <MappingFragment StoreEntitySet="CharacterEquipment">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="GoalsEquipmenTemplateId" ColumnName="GoalsEquipmenTemplateId" />
+          <ScalarProperty Name="CharacterEquipmentId" ColumnName="CharacterEquipmentId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CharacterPowers">
+      <EntityTypeMapping TypeName="Entities.CharacterPower">
+        <MappingFragment StoreEntitySet="CharacterPowers">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="GoalsPowerTemplateId" ColumnName="GoalsPowerTemplateId" />
+          <ScalarProperty Name="CharacterPowerId" ColumnName="CharacterPowerId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CharacterSpells">
+      <EntityTypeMapping TypeName="Entities.CharacterSpell">
+        <MappingFragment StoreEntitySet="CharacterSpells">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="GoalsSpellTemplateId" ColumnName="GoalsSpellTemplateId" />
+          <ScalarProperty Name="CharacterSpellId" ColumnName="CharacterSpellId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClassEquipments">
+      <EntityTypeMapping TypeName="Entities.ClassEquipment">
+        <MappingFragment StoreEntitySet="ClassEquipment">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ClassEquipmentId" ColumnName="ClassEquipmentId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClassPowers">
+      <EntityTypeMapping TypeName="Entities.ClassPower">
+        <MappingFragment StoreEntitySet="ClassPowers">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ClassPowerId" ColumnName="ClassPowerId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GoalsCharacters">
+      <EntityTypeMapping TypeName="Entities.GoalsCharacter">
+        <MappingFragment StoreEntitySet="GoalsCharacters">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="Reward" ColumnName="Reward" />
+          <ScalarProperty Name="ModTraitInitiative" ColumnName="ModTraitInitiative" />
+          <ScalarProperty Name="ModTraitDefense" ColumnName="ModTraitDefense" />
+          <ScalarProperty Name="ModTraitToughness" ColumnName="ModTraitToughness" />
+          <ScalarProperty Name="ModTraitStrength" ColumnName="ModTraitStrength" />
+          <ScalarProperty Name="ModTraitClass" ColumnName="ModTraitClass" />
+          <ScalarProperty Name="BaseTraitInitiative" ColumnName="BaseTraitInitiative" />
+          <ScalarProperty Name="BaseTraitDefense" ColumnName="BaseTraitDefense" />
+          <ScalarProperty Name="BaseTraitToughness" ColumnName="BaseTraitToughness" />
+          <ScalarProperty Name="BaseTraitStrength" ColumnName="BaseTraitStrength" />
+          <ScalarProperty Name="BaseTraitClass" ColumnName="BaseTraitClass" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="Speed" ColumnName="Speed" />
+          <ScalarProperty Name="HitPoints" ColumnName="HitPoints" />
+          <ScalarProperty Name="CharacterLevel" ColumnName="CharacterLevel" />
+          <ScalarProperty Name="Fate" ColumnName="Fate" />
+          <ScalarProperty Name="Alignment" ColumnName="Alignment" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="GoalsCharacterId" ColumnName="GoalsCharacterId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GoalsClasses">
+      <EntityTypeMapping TypeName="Entities.GoalsClass">
+        <MappingFragment StoreEntitySet="GoalsClasses">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="Page" ColumnName="Page" />
+          <ScalarProperty Name="BaseClass" ColumnName="BaseClass" />
+          <ScalarProperty Name="StartingHitPoints" ColumnName="StartingHitPoints" />
+          <ScalarProperty Name="Equipment" ColumnName="Equipment" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="GoalsClassId" ColumnName="GoalsClassId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GoalsEquipments">
+      <EntityTypeMapping TypeName="Entities.GoalsEquipment">
+        <MappingFragment StoreEntitySet="GoalsEquipment">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="Template" ColumnName="Template" />
+          <ScalarProperty Name="Page" ColumnName="Page" />
+          <ScalarProperty Name="EquipmentClass" ColumnName="EquipmentClass" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="Rarity" ColumnName="Rarity" />
+          <ScalarProperty Name="Effects" ColumnName="Effects" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="GoalsEquipmentId" ColumnName="GoalsEquipmentId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GoalsPowers">
+      <EntityTypeMapping TypeName="Entities.GoalsPower">
+        <MappingFragment StoreEntitySet="GoalsPowers">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="Template" ColumnName="Template" />
+          <ScalarProperty Name="PowerClass" ColumnName="PowerClass" />
+          <ScalarProperty Name="Page" ColumnName="Page" />
+          <ScalarProperty Name="Damage" ColumnName="Damage" />
+          <ScalarProperty Name="Range" ColumnName="Range" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="Effect" ColumnName="Effect" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="GoalsPowerId" ColumnName="GoalsPowerId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GoalsRaceMetas">
+      <EntityTypeMapping TypeName="Entities.GoalsRaceMeta">
+        <MappingFragment StoreEntitySet="GoalsRaceMeta">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="PropertyName" ColumnName="PropertyName" />
+          <ScalarProperty Name="GoalsCalassMetaId" ColumnName="GoalsCalassMetaId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GoalsRaces">
+      <EntityTypeMapping TypeName="Entities.GoalsRace">
+        <MappingFragment StoreEntitySet="GoalsRaces">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="Page" ColumnName="Page" />
+          <ScalarProperty Name="Languages" ColumnName="Languages" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="Points" ColumnName="Points" />
+          <ScalarProperty Name="Movement" ColumnName="Movement" />
+          <ScalarProperty Name="FavoredClasses" ColumnName="FavoredClasses" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="GoalsRaceId" ColumnName="GoalsRaceId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GoalsSpells">
+      <EntityTypeMapping TypeName="Entities.GoalsSpell">
+        <MappingFragment StoreEntitySet="GoalsSpells">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="Template" ColumnName="Template" />
+          <ScalarProperty Name="Page" ColumnName="Page" />
+          <ScalarProperty Name="School" ColumnName="School" />
+          <ScalarProperty Name="Uses" ColumnName="Uses" />
+          <ScalarProperty Name="Bonus" ColumnName="Bonus" />
+          <ScalarProperty Name="LevelBonus" ColumnName="LevelBonus" />
+          <ScalarProperty Name="Boost" ColumnName="Boost" />
+          <ScalarProperty Name="Damage" ColumnName="Damage" />
+          <ScalarProperty Name="Effects" ColumnName="Effects" />
+          <ScalarProperty Name="Range" ColumnName="Range" />
+          <ScalarProperty Name="Action" ColumnName="Action" />
+          <ScalarProperty Name="StartingLevel" ColumnName="StartingLevel" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="GoalsSpellId" ColumnName="GoalsSpellId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GoalsUsers">
+      <EntityTypeMapping TypeName="Entities.GoalsUser">
+        <MappingFragment StoreEntitySet="GoalsUsers">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RaceFavoredClasses">
+      <EntityTypeMapping TypeName="Entities.RaceFavoredClass">
+        <MappingFragment StoreEntitySet="RaceFavoredClass">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="RaceFavoredClassId" ColumnName="RaceFavoredClassId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RacePowers">
+      <EntityTypeMapping TypeName="Entities.RacePower">
+        <MappingFragment StoreEntitySet="RacePowers">
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="RacePowerId" ColumnName="RacePowerId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FK_CharacterEquipment_GoalsCharacters" TypeName="Entities.FK_CharacterEquipment_GoalsCharacters" StoreEntitySet="CharacterEquipment">
+      <EndProperty Name="CharacterEquipment">
+        <ScalarProperty Name="CharacterEquipmentId" ColumnName="CharacterEquipmentId" />
+      </EndProperty>
+      <EndProperty Name="GoalsCharacter">
+        <ScalarProperty Name="GoalsCharacterId" ColumnName="GoalsCharacterId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_CharacterEquipment_GoalsEquipment" TypeName="Entities.FK_CharacterEquipment_GoalsEquipment" StoreEntitySet="CharacterEquipment">
+      <EndProperty Name="CharacterEquipment">
+        <ScalarProperty Name="CharacterEquipmentId" ColumnName="CharacterEquipmentId" />
+      </EndProperty>
+      <EndProperty Name="GoalsEquipment">
+        <ScalarProperty Name="GoalsEquipmentId" ColumnName="GoalsEquipmentId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_CharacterPowers_GoalsCharacters" TypeName="Entities.FK_CharacterPowers_GoalsCharacters" StoreEntitySet="CharacterPowers">
+      <EndProperty Name="CharacterPower">
+        <ScalarProperty Name="CharacterPowerId" ColumnName="CharacterPowerId" />
+      </EndProperty>
+      <EndProperty Name="GoalsCharacter">
+        <ScalarProperty Name="GoalsCharacterId" ColumnName="GoalsCharacterId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_CharacterPowers_GoalsPowers" TypeName="Entities.FK_CharacterPowers_GoalsPowers" StoreEntitySet="CharacterPowers">
+      <EndProperty Name="CharacterPower">
+        <ScalarProperty Name="CharacterPowerId" ColumnName="CharacterPowerId" />
+      </EndProperty>
+      <EndProperty Name="GoalsPower">
+        <ScalarProperty Name="GoalsPowerId" ColumnName="GoalsPowerId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_CharacterSpells_GoalsCharacters" TypeName="Entities.FK_CharacterSpells_GoalsCharacters" StoreEntitySet="CharacterSpells">
+      <EndProperty Name="CharacterSpell">
+        <ScalarProperty Name="CharacterSpellId" ColumnName="CharacterSpellId" />
+      </EndProperty>
+      <EndProperty Name="GoalsCharacter">
+        <ScalarProperty Name="GoalsCharacterId" ColumnName="GoalsCharacterId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_CharacterSpells_GoalsSpells" TypeName="Entities.FK_CharacterSpells_GoalsSpells" StoreEntitySet="CharacterSpells">
+      <EndProperty Name="CharacterSpell">
+        <ScalarProperty Name="CharacterSpellId" ColumnName="CharacterSpellId" />
+      </EndProperty>
+      <EndProperty Name="GoalsSpell">
+        <ScalarProperty Name="GoalsSpellId" ColumnName="GoalsSpellId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_ClassEquipment_GoalsClasses" TypeName="Entities.FK_ClassEquipment_GoalsClasses" StoreEntitySet="ClassEquipment">
+      <EndProperty Name="ClassEquipment">
+        <ScalarProperty Name="ClassEquipmentId" ColumnName="ClassEquipmentId" />
+      </EndProperty>
+      <EndProperty Name="GoalsClass">
+        <ScalarProperty Name="GoalsClassId" ColumnName="GoalsClassId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_ClassEquipment_GoalsEquipment" TypeName="Entities.FK_ClassEquipment_GoalsEquipment" StoreEntitySet="ClassEquipment">
+      <EndProperty Name="ClassEquipment">
+        <ScalarProperty Name="ClassEquipmentId" ColumnName="ClassEquipmentId" />
+      </EndProperty>
+      <EndProperty Name="GoalsEquipment">
+        <ScalarProperty Name="GoalsEquipmentId" ColumnName="GoalsEquipmentId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_ClassPowers_GoalsClasses" TypeName="Entities.FK_ClassPowers_GoalsClasses" StoreEntitySet="ClassPowers">
+      <EndProperty Name="ClassPower">
+        <ScalarProperty Name="ClassPowerId" ColumnName="ClassPowerId" />
+      </EndProperty>
+      <EndProperty Name="GoalsClass">
+        <ScalarProperty Name="GoalsClassId" ColumnName="GoalsClassId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_ClassPowers_GoalsPowers" TypeName="Entities.FK_ClassPowers_GoalsPowers" StoreEntitySet="ClassPowers">
+      <EndProperty Name="ClassPower">
+        <ScalarProperty Name="ClassPowerId" ColumnName="ClassPowerId" />
+      </EndProperty>
+      <EndProperty Name="GoalsPower">
+        <ScalarProperty Name="GoalsPowerId" ColumnName="GoalsPowerId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_GoalsCharacters_GoalsClasses" TypeName="Entities.FK_GoalsCharacters_GoalsClasses" StoreEntitySet="GoalsCharacters">
+      <EndProperty Name="GoalsCharacter">
+        <ScalarProperty Name="GoalsCharacterId" ColumnName="GoalsCharacterId" />
+      </EndProperty>
+      <EndProperty Name="GoalsClass">
+        <ScalarProperty Name="GoalsClassId" ColumnName="GoalsClassId" />
+      </EndProperty>
+      <Condition ColumnName="GoalsClassId" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_GoalsCharacters_GoalsRaces1" TypeName="Entities.FK_GoalsCharacters_GoalsRaces1" StoreEntitySet="GoalsCharacters">
+      <EndProperty Name="GoalsCharacter">
+        <ScalarProperty Name="GoalsCharacterId" ColumnName="GoalsCharacterId" />
+      </EndProperty>
+      <EndProperty Name="GoalsRace">
+        <ScalarProperty Name="GoalsRaceId" ColumnName="GoalsRaceId" />
+      </EndProperty>
+      <Condition ColumnName="GoalsRaceId" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_GoalsCharacters_GoalsUsers" TypeName="Entities.FK_GoalsCharacters_GoalsUsers" StoreEntitySet="GoalsCharacters">
+      <EndProperty Name="GoalsCharacter">
+        <ScalarProperty Name="GoalsCharacterId" ColumnName="GoalsCharacterId" />
+      </EndProperty>
+      <EndProperty Name="GoalsUser">
+        <ScalarProperty Name="UserId" ColumnName="UserId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_RaceFavoredClass_GoalsClasses" TypeName="Entities.FK_RaceFavoredClass_GoalsClasses" StoreEntitySet="RaceFavoredClass">
+      <EndProperty Name="RaceFavoredClass">
+        <ScalarProperty Name="RaceFavoredClassId" ColumnName="RaceFavoredClassId" />
+      </EndProperty>
+      <EndProperty Name="GoalsClass">
+        <ScalarProperty Name="GoalsClassId" ColumnName="GoalsClassId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_RacePowers_GoalsPowers" TypeName="Entities.FK_RacePowers_GoalsPowers" StoreEntitySet="RacePowers">
+      <EndProperty Name="RacePower">
+        <ScalarProperty Name="RacePowerId" ColumnName="RacePowerId" />
+      </EndProperty>
+      <EndProperty Name="GoalsPower">
+        <ScalarProperty Name="GoalsPowerId" ColumnName="GoalsPowerId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_GoalsRaceMeta_GoalsRaces" TypeName="Entities.FK_GoalsRaceMeta_GoalsRaces" StoreEntitySet="GoalsRaceMeta">
+      <EndProperty Name="GoalsRaceMeta">
+        <ScalarProperty Name="GoalsCalassMetaId" ColumnName="GoalsCalassMetaId" />
+      </EndProperty>
+      <EndProperty Name="GoalsRace">
+        <ScalarProperty Name="GoalsRaceId" ColumnName="GoalsRaceId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_RaceFavoredClass_GoalsRaces" TypeName="Entities.FK_RaceFavoredClass_GoalsRaces" StoreEntitySet="RaceFavoredClass">
+      <EndProperty Name="RaceFavoredClass">
+        <ScalarProperty Name="RaceFavoredClassId" ColumnName="RaceFavoredClassId" />
+      </EndProperty>
+      <EndProperty Name="GoalsRace">
+        <ScalarProperty Name="GoalsRaceId" ColumnName="GoalsRaceId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_RacePowers_GoalsRaces" TypeName="Entities.FK_RacePowers_GoalsRaces" StoreEntitySet="RacePowers">
+      <EndProperty Name="RacePower">
+        <ScalarProperty Name="RacePowerId" ColumnName="RacePowerId" />
+      </EndProperty>
+      <EndProperty Name="GoalsRace">
+        <ScalarProperty Name="GoalsRaceId" ColumnName="GoalsRaceId" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

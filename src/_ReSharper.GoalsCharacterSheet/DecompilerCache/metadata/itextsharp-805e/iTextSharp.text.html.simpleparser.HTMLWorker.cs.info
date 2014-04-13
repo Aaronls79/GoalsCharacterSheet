@@ -1,0 +1,14 @@
+R# version: 5.1.1766.4
+assembly itextsharp, Version=5.4.3.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca
+  file C:\Users\Aaron\SkyDrive\AaronApps\GoalsCharacterSheet\lib\itextsharp.dll mtime 8/15/2013 7:12:08 PM
+  file C:\Users\Aaron\SkyDrive\AaronApps\GoalsCharacterSheet\src\Web\Bin\itextsharp.dll mtime 8/15/2013 7:12:08 PM
+referenced assembly mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  file C:\Windows\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll mtime 4/23/2013 10:57:26 PM
+referenced assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+  file C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll mtime 3/19/2010 2:31:26 AM
+referenced assembly System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  file C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.dll mtime 10/5/2012 10:53:24 AM
+referenced assembly System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  file C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Xml.dll mtime 7/21/2013 10:48:15 PM
+referenced assembly System.Security, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+  file C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Security.dll mtime 3/19/2010 2:31:26 AM

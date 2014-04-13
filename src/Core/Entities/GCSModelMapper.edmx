@@ -1,0 +1,1477 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Entities.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="EntitiesStoreContainer">
+          <EntitySet Name="CharacterEquipment" EntityType="Entities.Store.CharacterEquipment" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CharacterPowers" EntityType="Entities.Store.CharacterPowers" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CharacterSpells" EntityType="Entities.Store.CharacterSpells" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ClassEquipment" EntityType="Entities.Store.ClassEquipment" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ClassPowers" EntityType="Entities.Store.ClassPowers" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="GoalsCharacters" EntityType="Entities.Store.GoalsCharacters" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="GoalsClasses" EntityType="Entities.Store.GoalsClasses" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="GoalsEquipment" EntityType="Entities.Store.GoalsEquipment" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="GoalsPowers" EntityType="Entities.Store.GoalsPowers" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="GoalsRaceMeta" EntityType="Entities.Store.GoalsRaceMeta" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="GoalsRaces" EntityType="Entities.Store.GoalsRaces" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="GoalsSpells" EntityType="Entities.Store.GoalsSpells" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="GoalsUsers" EntityType="Entities.Store.GoalsUsers" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="RaceFavoredClass" EntityType="Entities.Store.RaceFavoredClass" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="RacePowers" EntityType="Entities.Store.RacePowers" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_CharacterEquipment_GoalsCharacters" Association="Entities.Store.FK_CharacterEquipment_GoalsCharacters">
+            <End Role="GoalsCharacters" EntitySet="GoalsCharacters" />
+            <End Role="CharacterEquipment" EntitySet="CharacterEquipment" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterEquipment_GoalsEquipment" Association="Entities.Store.FK_CharacterEquipment_GoalsEquipment">
+            <End Role="GoalsEquipment" EntitySet="GoalsEquipment" />
+            <End Role="CharacterEquipment" EntitySet="CharacterEquipment" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterPowers_GoalsCharacters" Association="Entities.Store.FK_CharacterPowers_GoalsCharacters">
+            <End Role="GoalsCharacters" EntitySet="GoalsCharacters" />
+            <End Role="CharacterPowers" EntitySet="CharacterPowers" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterPowers_GoalsPowers" Association="Entities.Store.FK_CharacterPowers_GoalsPowers">
+            <End Role="GoalsPowers" EntitySet="GoalsPowers" />
+            <End Role="CharacterPowers" EntitySet="CharacterPowers" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterSpells_GoalsCharacters" Association="Entities.Store.FK_CharacterSpells_GoalsCharacters">
+            <End Role="GoalsCharacters" EntitySet="GoalsCharacters" />
+            <End Role="CharacterSpells" EntitySet="CharacterSpells" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterSpells_GoalsSpells" Association="Entities.Store.FK_CharacterSpells_GoalsSpells">
+            <End Role="GoalsSpells" EntitySet="GoalsSpells" />
+            <End Role="CharacterSpells" EntitySet="CharacterSpells" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ClassEquipment_GoalsClasses" Association="Entities.Store.FK_ClassEquipment_GoalsClasses">
+            <End Role="GoalsClasses" EntitySet="GoalsClasses" />
+            <End Role="ClassEquipment" EntitySet="ClassEquipment" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ClassEquipment_GoalsEquipment" Association="Entities.Store.FK_ClassEquipment_GoalsEquipment">
+            <End Role="GoalsEquipment" EntitySet="GoalsEquipment" />
+            <End Role="ClassEquipment" EntitySet="ClassEquipment" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ClassPowers_GoalsClasses" Association="Entities.Store.FK_ClassPowers_GoalsClasses">
+            <End Role="GoalsClasses" EntitySet="GoalsClasses" />
+            <End Role="ClassPowers" EntitySet="ClassPowers" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ClassPowers_GoalsPowers" Association="Entities.Store.FK_ClassPowers_GoalsPowers">
+            <End Role="GoalsPowers" EntitySet="GoalsPowers" />
+            <End Role="ClassPowers" EntitySet="ClassPowers" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GoalsCharacters_GoalsClasses" Association="Entities.Store.FK_GoalsCharacters_GoalsClasses">
+            <End Role="GoalsClasses" EntitySet="GoalsClasses" />
+            <End Role="GoalsCharacters" EntitySet="GoalsCharacters" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GoalsCharacters_GoalsRaces1" Association="Entities.Store.FK_GoalsCharacters_GoalsRaces1">
+            <End Role="GoalsRaces" EntitySet="GoalsRaces" />
+            <End Role="GoalsCharacters" EntitySet="GoalsCharacters" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GoalsCharacters_GoalsUsers" Association="Entities.Store.FK_GoalsCharacters_GoalsUsers">
+            <End Role="GoalsUsers" EntitySet="GoalsUsers" />
+            <End Role="GoalsCharacters" EntitySet="GoalsCharacters" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GoalsRaceMeta_GoalsRaces" Association="Entities.Store.FK_GoalsRaceMeta_GoalsRaces">
+            <End Role="GoalsRaces" EntitySet="GoalsRaces" />
+            <End Role="GoalsRaceMeta" EntitySet="GoalsRaceMeta" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RaceFavoredClass_GoalsClasses" Association="Entities.Store.FK_RaceFavoredClass_GoalsClasses">
+            <End Role="GoalsClasses" EntitySet="GoalsClasses" />
+            <End Role="RaceFavoredClass" EntitySet="RaceFavoredClass" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RaceFavoredClass_GoalsRaces" Association="Entities.Store.FK_RaceFavoredClass_GoalsRaces">
+            <End Role="GoalsRaces" EntitySet="GoalsRaces" />
+            <End Role="RaceFavoredClass" EntitySet="RaceFavoredClass" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RacePowers_GoalsPowers" Association="Entities.Store.FK_RacePowers_GoalsPowers">
+            <End Role="GoalsPowers" EntitySet="GoalsPowers" />
+            <End Role="RacePowers" EntitySet="RacePowers" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RacePowers_GoalsRaces" Association="Entities.Store.FK_RacePowers_GoalsRaces">
+            <End Role="GoalsRaces" EntitySet="GoalsRaces" />
+            <End Role="RacePowers" EntitySet="RacePowers" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="CharacterEquipment">
+          <Key>
+            <PropertyRef Name="CharacterEquipmentId" />
+          </Key>
+          <Property Name="CharacterEquipmentId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="GoalsCharacterId" Type="int" Nullable="false" />
+          <Property Name="GoalsEquipmentId" Type="int" Nullable="false" />
+          <Property Name="GoalsEquipmenTemplateId" Type="int" Nullable="false" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+          <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CharacterPowers">
+          <Key>
+            <PropertyRef Name="CharacterPowerId" />
+          </Key>
+          <Property Name="CharacterPowerId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="GoalsCharacterId" Type="int" Nullable="false" />
+          <Property Name="GoalsPowerId" Type="int" Nullable="false" />
+          <Property Name="GoalsPowerTemplateId" Type="int" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+          <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CharacterSpells">
+          <Key>
+            <PropertyRef Name="CharacterSpellId" />
+          </Key>
+          <Property Name="CharacterSpellId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="GoalsCharacterId" Type="int" Nullable="false" />
+          <Property Name="GoalsSpellId" Type="int" Nullable="false" />
+          <Property Name="GoalsSpellTemplateId" Type="int" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+          <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ClassEquipment">
+          <Key>
+            <PropertyRef Name="ClassEquipmentId" />
+          </Key>
+          <Property Name="ClassEquipmentId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="GoalsClassId" Type="int" Nullable="false" />
+          <Property Name="GoalsEquipmentId" Type="int" Nullable="false" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+          <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ClassPowers">
+          <Key>
+            <PropertyRef Name="ClassPowerId" />
+          </Key>
+          <Property Name="ClassPowerId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="GoalsClassId" Type="int" Nullable="false" />
+          <Property Name="GoalsPowerId" Type="int" Nullable="false" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+          <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GoalsCharacters">
+          <Key>
+            <PropertyRef Name="GoalsCharacterId" />
+          </Key>
+          <Property Name="GoalsCharacterId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="Alignment" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="Fate" Type="int" Nullable="false" />
+          <Property Name="CharacterLevel" Type="int" Nullable="false" />
+          <Property Name="HitPoints" Type="int" Nullable="false" />
+          <Property Name="Speed" Type="int" Nullable="false" />
+          <Property Name="Cost" Type="int" Nullable="false" />
+          <Property Name="BaseTraitClass" Type="int" Nullable="false" />
+          <Property Name="BaseTraitStrength" Type="int" Nullable="false" />
+          <Property Name="BaseTraitToughness" Type="int" Nullable="false" />
+          <Property Name="BaseTraitDefense" Type="int" Nullable="false" />
+          <Property Name="BaseTraitInitiative" Type="int" Nullable="false" />
+          <Property Name="ModTraitClass" Type="int" Nullable="false" />
+          <Property Name="ModTraitStrength" Type="int" Nullable="false" />
+          <Property Name="ModTraitToughness" Type="int" Nullable="false" />
+          <Property Name="ModTraitDefense" Type="int" Nullable="false" />
+          <Property Name="ModTraitInitiative" Type="int" Nullable="false" />
+          <Property Name="Reward" Type="int" Nullable="false" />
+          <Property Name="UserId" Type="int" Nullable="false" />
+          <Property Name="GoalsRaceId" Type="int" />
+          <Property Name="GoalsClassId" Type="int" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+          <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GoalsClasses">
+          <Key>
+            <PropertyRef Name="GoalsClassId" />
+          </Key>
+          <Property Name="GoalsClassId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="512" />
+          <Property Name="Equipment" Type="nvarchar" Nullable="false" MaxLength="512" />
+          <Property Name="StartingHitPoints" Type="int" Nullable="false" />
+          <Property Name="BaseClass" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Page" Type="nvarchar" Nullable="false" MaxLength="10" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+          <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GoalsEquipment">
+          <Key>
+            <PropertyRef Name="GoalsEquipmentId" />
+          </Key>
+          <Property Name="GoalsEquipmentId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Type" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Effects" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Rarity" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Cost" Type="int" Nullable="false" />
+          <Property Name="EquipmentClass" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Page" Type="nvarchar" Nullable="false" MaxLength="10" />
+          <Property Name="Template" Type="bit" Nullable="false" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+          <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GoalsPowers">
+          <Key>
+            <PropertyRef Name="GoalsPowerId" />
+          </Key>
+          <Property Name="GoalsPowerId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Type" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="Effect" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Notes" Type="nvarchar" Nullable="false" MaxLength="512" />
+          <Property Name="Cost" Type="int" Nullable="false" />
+          <Property Name="Range" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Damage" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Page" Type="nvarchar" Nullable="false" MaxLength="10" />
+          <Property Name="PowerClass" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Template" Type="bit" Nullable="false" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+          <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GoalsRaceMeta">
+          <Key>
+            <PropertyRef Name="GoalsCalassMetaId" />
+          </Key>
+          <Property Name="GoalsCalassMetaId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="GoalsRaceId" Type="int" Nullable="false" />
+          <Property Name="PropertyName" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Value" Type="int" Nullable="false" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+          <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GoalsRaces">
+          <Key>
+            <PropertyRef Name="GoalsRaceId" />
+          </Key>
+          <Property Name="GoalsRaceId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="FavoredClasses" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="Movement" Type="int" Nullable="false" />
+          <Property Name="Points" Type="int" Nullable="false" />
+          <Property Name="Notes" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="Languages" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="Page" Type="nvarchar" Nullable="false" MaxLength="10" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+          <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GoalsSpells">
+          <Key>
+            <PropertyRef Name="GoalsSpellId" />
+          </Key>
+          <Property Name="GoalsSpellId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="StartingLevel" Type="int" Nullable="false" />
+          <Property Name="Action" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Range" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Effects" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Damage" Type="nvarchar" Nullable="false" MaxLength="256" />
+          <Property Name="Boost" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="LevelBonus" Type="int" Nullable="false" />
+          <Property Name="Bonus" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="Uses" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="School" Type="nchar" MaxLength="10" />
+          <Property Name="Page" Type="nvarchar" Nullable="false" MaxLength="10" />
+          <Property Name="Template" Type="bit" Nullable="false" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+          <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="GoalsUsers">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="UserName" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="RaceFavoredClass">
+          <Key>
+            <PropertyRef Name="RaceFavoredClassId" />
+          </Key>
+          <Property Name="RaceFavoredClassId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="GoalsRaceId" Type="int" Nullable="false" />
+          <Property Name="GoalsClassId" Type="int" Nullable="false" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+          <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="RacePowers">
+          <Key>
+            <PropertyRef Name="RacePowerId" />
+          </Key>
+          <Property Name="RacePowerId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="GoalsRaceId" Type="int" Nullable="false" />
+          <Property Name="GoalsPowerId" Type="int" Nullable="false" />
+          <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+          <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_CharacterEquipment_GoalsCharacters">
+          <End Role="GoalsCharacters" Type="Entities.Store.GoalsCharacters" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="CharacterEquipment" Type="Entities.Store.CharacterEquipment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GoalsCharacters">
+              <PropertyRef Name="GoalsCharacterId" />
+            </Principal>
+            <Dependent Role="CharacterEquipment">
+              <PropertyRef Name="GoalsCharacterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CharacterEquipment_GoalsEquipment">
+          <End Role="GoalsEquipment" Type="Entities.Store.GoalsEquipment" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="CharacterEquipment" Type="Entities.Store.CharacterEquipment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GoalsEquipment">
+              <PropertyRef Name="GoalsEquipmentId" />
+            </Principal>
+            <Dependent Role="CharacterEquipment">
+              <PropertyRef Name="GoalsEquipmentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CharacterPowers_GoalsCharacters">
+          <End Role="GoalsCharacters" Type="Entities.Store.GoalsCharacters" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="CharacterPowers" Type="Entities.Store.CharacterPowers" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GoalsCharacters">
+              <PropertyRef Name="GoalsCharacterId" />
+            </Principal>
+            <Dependent Role="CharacterPowers">
+              <PropertyRef Name="GoalsCharacterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CharacterPowers_GoalsPowers">
+          <End Role="GoalsPowers" Type="Entities.Store.GoalsPowers" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="CharacterPowers" Type="Entities.Store.CharacterPowers" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GoalsPowers">
+              <PropertyRef Name="GoalsPowerId" />
+            </Principal>
+            <Dependent Role="CharacterPowers">
+              <PropertyRef Name="GoalsPowerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CharacterSpells_GoalsCharacters">
+          <End Role="GoalsCharacters" Type="Entities.Store.GoalsCharacters" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="CharacterSpells" Type="Entities.Store.CharacterSpells" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GoalsCharacters">
+              <PropertyRef Name="GoalsCharacterId" />
+            </Principal>
+            <Dependent Role="CharacterSpells">
+              <PropertyRef Name="GoalsCharacterId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CharacterSpells_GoalsSpells">
+          <End Role="GoalsSpells" Type="Entities.Store.GoalsSpells" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="CharacterSpells" Type="Entities.Store.CharacterSpells" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GoalsSpells">
+              <PropertyRef Name="GoalsSpellId" />
+            </Principal>
+            <Dependent Role="CharacterSpells">
+              <PropertyRef Name="GoalsSpellId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ClassEquipment_GoalsClasses">
+          <End Role="GoalsClasses" Type="Entities.Store.GoalsClasses" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="ClassEquipment" Type="Entities.Store.ClassEquipment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GoalsClasses">
+              <PropertyRef Name="GoalsClassId" />
+            </Principal>
+            <Dependent Role="ClassEquipment">
+              <PropertyRef Name="GoalsClassId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ClassEquipment_GoalsEquipment">
+          <End Role="GoalsEquipment" Type="Entities.Store.GoalsEquipment" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="ClassEquipment" Type="Entities.Store.ClassEquipment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GoalsEquipment">
+              <PropertyRef Name="GoalsEquipmentId" />
+            </Principal>
+            <Dependent Role="ClassEquipment">
+              <PropertyRef Name="GoalsEquipmentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ClassPowers_GoalsClasses">
+          <End Role="GoalsClasses" Type="Entities.Store.GoalsClasses" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="ClassPowers" Type="Entities.Store.ClassPowers" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GoalsClasses">
+              <PropertyRef Name="GoalsClassId" />
+            </Principal>
+            <Dependent Role="ClassPowers">
+              <PropertyRef Name="GoalsClassId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ClassPowers_GoalsPowers">
+          <End Role="GoalsPowers" Type="Entities.Store.GoalsPowers" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="ClassPowers" Type="Entities.Store.ClassPowers" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GoalsPowers">
+              <PropertyRef Name="GoalsPowerId" />
+            </Principal>
+            <Dependent Role="ClassPowers">
+              <PropertyRef Name="GoalsPowerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GoalsCharacters_GoalsClasses">
+          <End Role="GoalsClasses" Type="Entities.Store.GoalsClasses" Multiplicity="0..1" />
+          <End Role="GoalsCharacters" Type="Entities.Store.GoalsCharacters" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GoalsClasses">
+              <PropertyRef Name="GoalsClassId" />
+            </Principal>
+            <Dependent Role="GoalsCharacters">
+              <PropertyRef Name="GoalsClassId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GoalsCharacters_GoalsRaces1">
+          <End Role="GoalsRaces" Type="Entities.Store.GoalsRaces" Multiplicity="0..1" />
+          <End Role="GoalsCharacters" Type="Entities.Store.GoalsCharacters" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GoalsRaces">
+              <PropertyRef Name="GoalsRaceId" />
+            </Principal>
+            <Dependent Role="GoalsCharacters">
+              <PropertyRef Name="GoalsRaceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GoalsCharacters_GoalsUsers">
+          <End Role="GoalsUsers" Type="Entities.Store.GoalsUsers" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="GoalsCharacters" Type="Entities.Store.GoalsCharacters" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GoalsUsers">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="GoalsCharacters">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GoalsRaceMeta_GoalsRaces">
+          <End Role="GoalsRaces" Type="Entities.Store.GoalsRaces" Multiplicity="1" />
+          <End Role="GoalsRaceMeta" Type="Entities.Store.GoalsRaceMeta" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GoalsRaces">
+              <PropertyRef Name="GoalsRaceId" />
+            </Principal>
+            <Dependent Role="GoalsRaceMeta">
+              <PropertyRef Name="GoalsRaceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RaceFavoredClass_GoalsClasses">
+          <End Role="GoalsClasses" Type="Entities.Store.GoalsClasses" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="RaceFavoredClass" Type="Entities.Store.RaceFavoredClass" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GoalsClasses">
+              <PropertyRef Name="GoalsClassId" />
+            </Principal>
+            <Dependent Role="RaceFavoredClass">
+              <PropertyRef Name="GoalsClassId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RaceFavoredClass_GoalsRaces">
+          <End Role="GoalsRaces" Type="Entities.Store.GoalsRaces" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="RaceFavoredClass" Type="Entities.Store.RaceFavoredClass" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GoalsRaces">
+              <PropertyRef Name="GoalsRaceId" />
+            </Principal>
+            <Dependent Role="RaceFavoredClass">
+              <PropertyRef Name="GoalsRaceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RacePowers_GoalsPowers">
+          <End Role="GoalsPowers" Type="Entities.Store.GoalsPowers" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="RacePowers" Type="Entities.Store.RacePowers" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GoalsPowers">
+              <PropertyRef Name="GoalsPowerId" />
+            </Principal>
+            <Dependent Role="RacePowers">
+              <PropertyRef Name="GoalsPowerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_RacePowers_GoalsRaces">
+          <End Role="GoalsRaces" Type="Entities.Store.GoalsRaces" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="RacePowers" Type="Entities.Store.RacePowers" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GoalsRaces">
+              <PropertyRef Name="GoalsRaceId" />
+            </Principal>
+            <Dependent Role="RacePowers">
+              <PropertyRef Name="GoalsRaceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Entities" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="GCSDatabaseEntities">
+          <EntitySet Name="CharacterEquipments" EntityType="Entities.CharacterEquipment" />
+          <EntitySet Name="CharacterPowers" EntityType="Entities.CharacterPower" />
+          <EntitySet Name="CharacterSpells" EntityType="Entities.CharacterSpell" />
+          <EntitySet Name="ClassEquipments" EntityType="Entities.ClassEquipment" />
+          <EntitySet Name="ClassPowers" EntityType="Entities.ClassPower" />
+          <EntitySet Name="GoalsCharacters" EntityType="Entities.GoalsCharacter" />
+          <EntitySet Name="GoalsClasses" EntityType="Entities.GoalsClass" />
+          <EntitySet Name="GoalsEquipments" EntityType="Entities.GoalsEquipment" />
+          <EntitySet Name="GoalsPowers" EntityType="Entities.GoalsPower" />
+          <EntitySet Name="GoalsRaceMetas" EntityType="Entities.GoalsRaceMeta" />
+          <EntitySet Name="GoalsRaces" EntityType="Entities.GoalsRace" />
+          <EntitySet Name="GoalsSpells" EntityType="Entities.GoalsSpell" />
+          <EntitySet Name="GoalsUsers" EntityType="Entities.GoalsUser" />
+          <EntitySet Name="RaceFavoredClasses" EntityType="Entities.RaceFavoredClass" />
+          <EntitySet Name="RacePowers" EntityType="Entities.RacePower" />
+          <AssociationSet Name="FK_CharacterEquipment_GoalsCharacters" Association="Entities.FK_CharacterEquipment_GoalsCharacters">
+            <End Role="GoalsCharacter" EntitySet="GoalsCharacters" />
+            <End Role="CharacterEquipment" EntitySet="CharacterEquipments" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterEquipment_GoalsEquipment" Association="Entities.FK_CharacterEquipment_GoalsEquipment">
+            <End Role="GoalsEquipment" EntitySet="GoalsEquipments" />
+            <End Role="CharacterEquipment" EntitySet="CharacterEquipments" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterPowers_GoalsCharacters" Association="Entities.FK_CharacterPowers_GoalsCharacters">
+            <End Role="GoalsCharacter" EntitySet="GoalsCharacters" />
+            <End Role="CharacterPower" EntitySet="CharacterPowers" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterPowers_GoalsPowers" Association="Entities.FK_CharacterPowers_GoalsPowers">
+            <End Role="GoalsPower" EntitySet="GoalsPowers" />
+            <End Role="CharacterPower" EntitySet="CharacterPowers" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterSpells_GoalsCharacters" Association="Entities.FK_CharacterSpells_GoalsCharacters">
+            <End Role="GoalsCharacter" EntitySet="GoalsCharacters" />
+            <End Role="CharacterSpell" EntitySet="CharacterSpells" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CharacterSpells_GoalsSpells" Association="Entities.FK_CharacterSpells_GoalsSpells">
+            <End Role="GoalsSpell" EntitySet="GoalsSpells" />
+            <End Role="CharacterSpell" EntitySet="CharacterSpells" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ClassEquipment_GoalsClasses" Association="Entities.FK_ClassEquipment_GoalsClasses">
+            <End Role="GoalsClass" EntitySet="GoalsClasses" />
+            <End Role="ClassEquipment" EntitySet="ClassEquipments" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ClassEquipment_GoalsEquipment" Association="Entities.FK_ClassEquipment_GoalsEquipment">
+            <End Role="GoalsEquipment" EntitySet="GoalsEquipments" />
+            <End Role="ClassEquipment" EntitySet="ClassEquipments" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ClassPowers_GoalsClasses" Association="Entities.FK_ClassPowers_GoalsClasses">
+            <End Role="GoalsClass" EntitySet="GoalsClasses" />
+            <End Role="ClassPower" EntitySet="ClassPowers" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ClassPowers_GoalsPowers" Association="Entities.FK_ClassPowers_GoalsPowers">
+            <End Role="GoalsPower" EntitySet="GoalsPowers" />
+            <End Role="ClassPower" EntitySet="ClassPowers" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GoalsCharacters_GoalsClasses" Association="Entities.FK_GoalsCharacters_GoalsClasses">
+            <End Role="GoalsClass" EntitySet="GoalsClasses" />
+            <End Role="GoalsCharacter" EntitySet="GoalsCharacters" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GoalsCharacters_GoalsRaces1" Association="Entities.FK_GoalsCharacters_GoalsRaces1">
+            <End Role="GoalsRace" EntitySet="GoalsRaces" />
+            <End Role="GoalsCharacter" EntitySet="GoalsCharacters" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GoalsCharacters_GoalsUsers" Association="Entities.FK_GoalsCharacters_GoalsUsers">
+            <End Role="GoalsUser" EntitySet="GoalsUsers" />
+            <End Role="GoalsCharacter" EntitySet="GoalsCharacters" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RaceFavoredClass_GoalsClasses" Association="Entities.FK_RaceFavoredClass_GoalsClasses">
+            <End Role="GoalsClass" EntitySet="GoalsClasses" />
+            <End Role="RaceFavoredClass" EntitySet="RaceFavoredClasses" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RacePowers_GoalsPowers" Association="Entities.FK_RacePowers_GoalsPowers">
+            <End Role="GoalsPower" EntitySet="GoalsPowers" />
+            <End Role="RacePower" EntitySet="RacePowers" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GoalsRaceMeta_GoalsRaces" Association="Entities.FK_GoalsRaceMeta_GoalsRaces">
+            <End Role="GoalsRace" EntitySet="GoalsRaces" />
+            <End Role="GoalsRaceMeta" EntitySet="GoalsRaceMetas" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RaceFavoredClass_GoalsRaces" Association="Entities.FK_RaceFavoredClass_GoalsRaces">
+            <End Role="GoalsRace" EntitySet="GoalsRaces" />
+            <End Role="RaceFavoredClass" EntitySet="RaceFavoredClasses" />
+          </AssociationSet>
+          <AssociationSet Name="FK_RacePowers_GoalsRaces" Association="Entities.FK_RacePowers_GoalsRaces">
+            <End Role="GoalsRace" EntitySet="GoalsRaces" />
+            <End Role="RacePower" EntitySet="RacePowers" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="CharacterEquipment">
+          <Key>
+            <PropertyRef Name="CharacterEquipmentId" />
+          </Key>
+          <Property Type="Int32" Name="CharacterEquipmentId" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="Int32" Name="GoalsEquipmenTemplateId" Nullable="false" />
+          <Property Type="DateTime" Name="CreatedDate" Nullable="false" />
+          <Property Type="DateTime" Name="ModifiedDate" Nullable="false" />
+          <NavigationProperty Name="GoalsCharacter" Relationship="Entities.FK_CharacterEquipment_GoalsCharacters" FromRole="CharacterEquipment" ToRole="GoalsCharacter" />
+          <NavigationProperty Name="GoalsEquipment" Relationship="Entities.FK_CharacterEquipment_GoalsEquipment" FromRole="CharacterEquipment" ToRole="GoalsEquipment" />
+        </EntityType>
+        <EntityType Name="CharacterPower">
+          <Key>
+            <PropertyRef Name="CharacterPowerId" />
+          </Key>
+          <Property Type="Int32" Name="CharacterPowerId" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="Int32" Name="GoalsPowerTemplateId" />
+          <Property Type="DateTime" Name="CreatedDate" Nullable="false" />
+          <Property Type="DateTime" Name="ModifiedDate" Nullable="false" />
+          <NavigationProperty Name="GoalsCharacter" Relationship="Entities.FK_CharacterPowers_GoalsCharacters" FromRole="CharacterPower" ToRole="GoalsCharacter" />
+          <NavigationProperty Name="GoalsPower" Relationship="Entities.FK_CharacterPowers_GoalsPowers" FromRole="CharacterPower" ToRole="GoalsPower" />
+        </EntityType>
+        <EntityType Name="CharacterSpell">
+          <Key>
+            <PropertyRef Name="CharacterSpellId" />
+          </Key>
+          <Property Type="Int32" Name="CharacterSpellId" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="Int32" Name="GoalsSpellTemplateId" />
+          <Property Type="DateTime" Name="CreatedDate" Nullable="false" />
+          <Property Type="DateTime" Name="ModifiedDate" Nullable="false" />
+          <NavigationProperty Name="GoalsCharacter" Relationship="Entities.FK_CharacterSpells_GoalsCharacters" FromRole="CharacterSpell" ToRole="GoalsCharacter" />
+          <NavigationProperty Name="GoalsSpell" Relationship="Entities.FK_CharacterSpells_GoalsSpells" FromRole="CharacterSpell" ToRole="GoalsSpell" />
+        </EntityType>
+        <EntityType Name="ClassEquipment">
+          <Key>
+            <PropertyRef Name="ClassEquipmentId" />
+          </Key>
+          <Property Type="Int32" Name="ClassEquipmentId" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="DateTime" Name="CreatedDate" Nullable="false" />
+          <Property Type="DateTime" Name="ModifiedDate" Nullable="false" />
+          <NavigationProperty Name="GoalsClass" Relationship="Entities.FK_ClassEquipment_GoalsClasses" FromRole="ClassEquipment" ToRole="GoalsClass" />
+          <NavigationProperty Name="GoalsEquipment" Relationship="Entities.FK_ClassEquipment_GoalsEquipment" FromRole="ClassEquipment" ToRole="GoalsEquipment" />
+        </EntityType>
+        <EntityType Name="ClassPower">
+          <Key>
+            <PropertyRef Name="ClassPowerId" />
+          </Key>
+          <Property Type="Int32" Name="ClassPowerId" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="DateTime" Name="CreatedDate" Nullable="false" />
+          <Property Type="DateTime" Name="ModifiedDate" Nullable="false" />
+          <NavigationProperty Name="GoalsClass" Relationship="Entities.FK_ClassPowers_GoalsClasses" FromRole="ClassPower" ToRole="GoalsClass" />
+          <NavigationProperty Name="GoalsPower" Relationship="Entities.FK_ClassPowers_GoalsPowers" FromRole="ClassPower" ToRole="GoalsPower" />
+        </EntityType>
+        <EntityType Name="GoalsCharacter">
+          <Key>
+            <PropertyRef Name="GoalsCharacterId" />
+          </Key>
+          <Property Type="Int32" Name="GoalsCharacterId" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Alignment" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="Fate" Nullable="false" />
+          <Property Type="Int32" Name="CharacterLevel" Nullable="false" />
+          <Property Type="Int32" Name="HitPoints" Nullable="false" />
+          <Property Type="Int32" Name="Speed" Nullable="false" />
+          <Property Type="Int32" Name="Cost" Nullable="false" />
+          <Property Type="Int32" Name="BaseTraitClass" Nullable="false" />
+          <Property Type="Int32" Name="BaseTraitStrength" Nullable="false" />
+          <Property Type="Int32" Name="BaseTraitToughness" Nullable="false" />
+          <Property Type="Int32" Name="BaseTraitDefense" Nullable="false" />
+          <Property Type="Int32" Name="BaseTraitInitiative" Nullable="false" />
+          <Property Type="Int32" Name="ModTraitClass" Nullable="false" />
+          <Property Type="Int32" Name="ModTraitStrength" Nullable="false" />
+          <Property Type="Int32" Name="ModTraitToughness" Nullable="false" />
+          <Property Type="Int32" Name="ModTraitDefense" Nullable="false" />
+          <Property Type="Int32" Name="ModTraitInitiative" Nullable="false" />
+          <Property Type="Int32" Name="Reward" Nullable="false" />
+          <Property Type="DateTime" Name="CreatedDate" Nullable="false" />
+          <Property Type="DateTime" Name="ModifiedDate" Nullable="false" />
+          <NavigationProperty Name="CharacterEquipments" Relationship="Entities.FK_CharacterEquipment_GoalsCharacters" FromRole="GoalsCharacter" ToRole="CharacterEquipment" />
+          <NavigationProperty Name="CharacterPowers" Relationship="Entities.FK_CharacterPowers_GoalsCharacters" FromRole="GoalsCharacter" ToRole="CharacterPower" />
+          <NavigationProperty Name="CharacterSpells" Relationship="Entities.FK_CharacterSpells_GoalsCharacters" FromRole="GoalsCharacter" ToRole="CharacterSpell" />
+          <NavigationProperty Name="GoalsClass" Relationship="Entities.FK_GoalsCharacters_GoalsClasses" FromRole="GoalsCharacter" ToRole="GoalsClass" />
+          <NavigationProperty Name="GoalsRace" Relationship="Entities.FK_GoalsCharacters_GoalsRaces1" FromRole="GoalsCharacter" ToRole="GoalsRace" />
+          <NavigationProperty Name="GoalsUser" Relationship="Entities.FK_GoalsCharacters_GoalsUsers" FromRole="GoalsCharacter" ToRole="GoalsUser" />
+        </EntityType>
+        <EntityType Name="GoalsClass">
+          <Key>
+            <PropertyRef Name="GoalsClassId" />
+          </Key>
+          <Property Type="Int32" Name="GoalsClassId" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Description" Nullable="false" MaxLength="512" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Equipment" Nullable="false" MaxLength="512" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="StartingHitPoints" Nullable="false" />
+          <Property Type="String" Name="BaseClass" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Page" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CreatedDate" Nullable="false" />
+          <Property Type="DateTime" Name="ModifiedDate" Nullable="false" />
+          <NavigationProperty Name="ClassEquipments" Relationship="Entities.FK_ClassEquipment_GoalsClasses" FromRole="GoalsClass" ToRole="ClassEquipment" />
+          <NavigationProperty Name="ClassPowers" Relationship="Entities.FK_ClassPowers_GoalsClasses" FromRole="GoalsClass" ToRole="ClassPower" />
+          <NavigationProperty Name="GoalsCharacters" Relationship="Entities.FK_GoalsCharacters_GoalsClasses" FromRole="GoalsClass" ToRole="GoalsCharacter" />
+          <NavigationProperty Name="RaceFavoredClasses" Relationship="Entities.FK_RaceFavoredClass_GoalsClasses" FromRole="GoalsClass" ToRole="RaceFavoredClass" />
+        </EntityType>
+        <EntityType Name="GoalsEquipment">
+          <Key>
+            <PropertyRef Name="GoalsEquipmentId" />
+          </Key>
+          <Property Type="Int32" Name="GoalsEquipmentId" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Type" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Effects" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Rarity" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="Cost" Nullable="false" />
+          <Property Type="String" Name="EquipmentClass" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Page" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="Template" Nullable="false" />
+          <Property Type="DateTime" Name="CreatedDate" Nullable="false" />
+          <Property Type="DateTime" Name="ModifiedDate" Nullable="false" />
+          <NavigationProperty Name="CharacterEquipments" Relationship="Entities.FK_CharacterEquipment_GoalsEquipment" FromRole="GoalsEquipment" ToRole="CharacterEquipment" />
+          <NavigationProperty Name="ClassEquipments" Relationship="Entities.FK_ClassEquipment_GoalsEquipment" FromRole="GoalsEquipment" ToRole="ClassEquipment" />
+        </EntityType>
+        <EntityType Name="GoalsPower">
+          <Key>
+            <PropertyRef Name="GoalsPowerId" />
+          </Key>
+          <Property Type="Int32" Name="GoalsPowerId" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Type" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Effect" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Notes" Nullable="false" MaxLength="512" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="Cost" Nullable="false" />
+          <Property Type="String" Name="Range" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Damage" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Page" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="PowerClass" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="Template" Nullable="false" />
+          <Property Type="DateTime" Name="CreatedDate" Nullable="false" />
+          <Property Type="DateTime" Name="ModifiedDate" Nullable="false" />
+          <NavigationProperty Name="CharacterPowers" Relationship="Entities.FK_CharacterPowers_GoalsPowers" FromRole="GoalsPower" ToRole="CharacterPower" />
+          <NavigationProperty Name="ClassPowers" Relationship="Entities.FK_ClassPowers_GoalsPowers" FromRole="GoalsPower" ToRole="ClassPower" />
+          <NavigationProperty Name="RacePowers" Relationship="Entities.FK_RacePowers_GoalsPowers" FromRole="GoalsPower" ToRole="RacePower" />
+        </EntityType>
+        <EntityType Name="GoalsRaceMeta">
+          <Key>
+            <PropertyRef Name="GoalsCalassMetaId" />
+          </Key>
+          <Property Type="Int32" Name="GoalsCalassMetaId" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="PropertyName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="Value" Nullable="false" />
+          <Property Type="DateTime" Name="CreatedDate" Nullable="false" />
+          <Property Type="DateTime" Name="ModifiedDate" Nullable="false" />
+          <NavigationProperty Name="GoalsRace" Relationship="Entities.FK_GoalsRaceMeta_GoalsRaces" FromRole="GoalsRaceMeta" ToRole="GoalsRace" />
+        </EntityType>
+        <EntityType Name="GoalsRace">
+          <Key>
+            <PropertyRef Name="GoalsRaceId" />
+          </Key>
+          <Property Type="Int32" Name="GoalsRaceId" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Description" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="FavoredClasses" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="Movement" Nullable="false" />
+          <Property Type="Int32" Name="Points" Nullable="false" />
+          <Property Type="String" Name="Notes" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Languages" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Page" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="CreatedDate" Nullable="false" />
+          <Property Type="DateTime" Name="ModifiedDate" Nullable="false" />
+          <NavigationProperty Name="GoalsCharacters" Relationship="Entities.FK_GoalsCharacters_GoalsRaces1" FromRole="GoalsRace" ToRole="GoalsCharacter" />
+          <NavigationProperty Name="GoalsRaceMetas" Relationship="Entities.FK_GoalsRaceMeta_GoalsRaces" FromRole="GoalsRace" ToRole="GoalsRaceMeta" />
+          <NavigationProperty Name="RaceFavoredClasses" Relationship="Entities.FK_RaceFavoredClass_GoalsRaces" FromRole="GoalsRace" ToRole="RaceFavoredClass" />
+          <NavigationProperty Name="RacePowers" Relationship="Entities.FK_RacePowers_GoalsRaces" FromRole="GoalsRace" ToRole="RacePower" />
+        </EntityType>
+        <EntityType Name="GoalsSpell">
+          <Key>
+            <PropertyRef Name="GoalsSpellId" />
+          </Key>
+          <Property Type="Int32" Name="GoalsSpellId" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="StartingLevel" Nullable="false" />
+          <Property Type="String" Name="Action" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Range" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Effects" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Damage" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Boost" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="LevelBonus" Nullable="false" />
+          <Property Type="String" Name="Bonus" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Uses" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="School" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Type="String" Name="Page" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="Template" Nullable="false" />
+          <Property Type="DateTime" Name="CreatedDate" Nullable="false" />
+          <Property Type="DateTime" Name="ModifiedDate" Nullable="false" />
+          <NavigationProperty Name="CharacterSpells" Relationship="Entities.FK_CharacterSpells_GoalsSpells" FromRole="GoalsSpell" ToRole="CharacterSpell" />
+        </EntityType>
+        <EntityType Name="GoalsUser">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Type="Int32" Name="UserId" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="UserName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="GoalsCharacters" Relationship="Entities.FK_GoalsCharacters_GoalsUsers" FromRole="GoalsUser" ToRole="GoalsCharacter" />
+        </EntityType>
+        <EntityType Name="RaceFavoredClass">
+          <Key>
+            <PropertyRef Name="RaceFavoredClassId" />
+          </Key>
+          <Property Type="Int32" Name="RaceFavoredClassId" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="DateTime" Name="CreatedDate" Nullable="false" />
+          <Property Type="DateTime" Name="ModifiedDate" Nullable="false" />
+          <NavigationProperty Name="GoalsClass" Relationship="Entities.FK_RaceFavoredClass_GoalsClasses" FromRole="RaceFavoredClass" ToRole="GoalsClass" />
+          <NavigationProperty Name="GoalsRace" Relationship="Entities.FK_RaceFavoredClass_GoalsRaces" FromRole="RaceFavoredClass" ToRole="GoalsRace" />
+        </EntityType>
+        <EntityType Name="RacePower">
+          <Key>
+            <PropertyRef Name="RacePowerId" />
+          </Key>
+          <Property Type="Int32" Name="RacePowerId" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="DateTime" Name="CreatedDate" Nullable="false" />
+          <Property Type="DateTime" Name="ModifiedDate" Nullable="false" />
+          <NavigationProperty Name="GoalsPower" Relationship="Entities.FK_RacePowers_GoalsPowers" FromRole="RacePower" ToRole="GoalsPower" />
+          <NavigationProperty Name="GoalsRace" Relationship="Entities.FK_RacePowers_GoalsRaces" FromRole="RacePower" ToRole="GoalsRace" />
+        </EntityType>
+        <Association Name="FK_CharacterEquipment_GoalsCharacters">
+          <End Type="Entities.GoalsCharacter" Role="GoalsCharacter" Multiplicity="1" >
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="Entities.CharacterEquipment" Role="CharacterEquipment" Multiplicity="*" />
+        </Association>
+        <Association Name="FK_CharacterEquipment_GoalsEquipment">
+          <End Type="Entities.GoalsEquipment" Role="GoalsEquipment" Multiplicity="1" >
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="Entities.CharacterEquipment" Role="CharacterEquipment" Multiplicity="*" >
+          </End>
+        </Association>
+        <Association Name="FK_CharacterPowers_GoalsCharacters">
+          <End Type="Entities.GoalsCharacter" Role="GoalsCharacter" Multiplicity="1" >
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="Entities.CharacterPower" Role="CharacterPower" Multiplicity="*" />
+        </Association>
+        <Association Name="FK_CharacterPowers_GoalsPowers">
+          <End Type="Entities.GoalsPower" Role="GoalsPower" Multiplicity="1" >
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="Entities.CharacterPower" Role="CharacterPower" Multiplicity="*" />
+        </Association>
+        <Association Name="FK_CharacterSpells_GoalsCharacters">
+          <End Type="Entities.GoalsCharacter" Role="GoalsCharacter" Multiplicity="1" >
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="Entities.CharacterSpell" Role="CharacterSpell" Multiplicity="*" />
+        </Association>
+        <Association Name="FK_CharacterSpells_GoalsSpells">
+          <End Type="Entities.GoalsSpell" Role="GoalsSpell" Multiplicity="1" >
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="Entities.CharacterSpell" Role="CharacterSpell" Multiplicity="*" />
+        </Association>
+        <Association Name="FK_ClassEquipment_GoalsClasses">
+          <End Type="Entities.GoalsClass" Role="GoalsClass" Multiplicity="1" >
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="Entities.ClassEquipment" Role="ClassEquipment" Multiplicity="*" />
+        </Association>
+        <Association Name="FK_ClassEquipment_GoalsEquipment">
+          <End Type="Entities.GoalsEquipment" Role="GoalsEquipment" Multiplicity="1" >
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="Entities.ClassEquipment" Role="ClassEquipment" Multiplicity="*" />
+        </Association>
+        <Association Name="FK_ClassPowers_GoalsClasses">
+          <End Type="Entities.GoalsClass" Role="GoalsClass" Multiplicity="1" >
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="Entities.ClassPower" Role="ClassPower" Multiplicity="*" />
+        </Association>
+        <Association Name="FK_ClassPowers_GoalsPowers">
+          <End Type="Entities.GoalsPower" Role="GoalsPower" Multiplicity="1" >
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="Entities.ClassPower" Role="ClassPower" Multiplicity="*" />
+        </Association>
+        <Association Name="FK_GoalsCharacters_GoalsClasses">
+          <End Type="Entities.GoalsClass" Role="GoalsClass" Multiplicity="0..1" >
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="Entities.GoalsCharacter" Role="GoalsCharacter" Multiplicity="*" />
+        </Association>
+        <Association Name="FK_GoalsCharacters_GoalsRaces1">
+          <End Type="Entities.GoalsRace" Role="GoalsRace" Multiplicity="0..1" >
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="Entities.GoalsCharacter" Role="GoalsCharacter" Multiplicity="*" />
+        </Association>
+        <Association Name="FK_GoalsCharacters_GoalsUsers">
+          <End Type="Entities.GoalsUser" Role="GoalsUser" Multiplicity="1" >
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="Entities.GoalsCharacter" Role="GoalsCharacter" Multiplicity="*" />
+        </Association>
+        <Association Name="FK_RaceFavoredClass_GoalsClasses">
+          <End Type="Entities.GoalsClass" Role="GoalsClass" Multiplicity="1" >
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="Entities.RaceFavoredClass" Role="RaceFavoredClass" Multiplicity="*" />
+        </Association>
+        <Association Name="FK_RacePowers_GoalsPowers">
+          <End Type="Entities.GoalsPower" Role="GoalsPower" Multiplicity="1" >
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="Entities.RacePower" Role="RacePower" Multiplicity="*" />
+        </Association>
+        <Association Name="FK_GoalsRaceMeta_GoalsRaces">
+          <End Type="Entities.GoalsRace" Role="GoalsRace" Multiplicity="1" >
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="Entities.GoalsRaceMeta" Role="GoalsRaceMeta" Multiplicity="*" />
+        </Association>
+        <Association Name="FK_RaceFavoredClass_GoalsRaces">
+          <End Type="Entities.GoalsRace" Role="GoalsRace" Multiplicity="1" >
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="Entities.RaceFavoredClass" Role="RaceFavoredClass" Multiplicity="*" />
+        </Association>
+        <Association Name="FK_RacePowers_GoalsRaces">
+          <End Type="Entities.GoalsRace" Role="GoalsRace" Multiplicity="1" >
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="Entities.RacePower" Role="RacePower" Multiplicity="*" />
+        </Association>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="EntitiesStoreContainer" CdmEntityContainer="GCSDatabaseEntities">
+          <EntitySetMapping Name="CharacterEquipments">
+            <EntityTypeMapping TypeName="Entities.CharacterEquipment">
+              <MappingFragment StoreEntitySet="CharacterEquipment">
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="GoalsEquipmenTemplateId" ColumnName="GoalsEquipmenTemplateId" />
+                <ScalarProperty Name="CharacterEquipmentId" ColumnName="CharacterEquipmentId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CharacterPowers">
+            <EntityTypeMapping TypeName="Entities.CharacterPower">
+              <MappingFragment StoreEntitySet="CharacterPowers">
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="GoalsPowerTemplateId" ColumnName="GoalsPowerTemplateId" />
+                <ScalarProperty Name="CharacterPowerId" ColumnName="CharacterPowerId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CharacterSpells">
+            <EntityTypeMapping TypeName="Entities.CharacterSpell">
+              <MappingFragment StoreEntitySet="CharacterSpells">
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="GoalsSpellTemplateId" ColumnName="GoalsSpellTemplateId" />
+                <ScalarProperty Name="CharacterSpellId" ColumnName="CharacterSpellId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ClassEquipments">
+            <EntityTypeMapping TypeName="Entities.ClassEquipment">
+              <MappingFragment StoreEntitySet="ClassEquipment">
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="ClassEquipmentId" ColumnName="ClassEquipmentId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ClassPowers">
+            <EntityTypeMapping TypeName="Entities.ClassPower">
+              <MappingFragment StoreEntitySet="ClassPowers">
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="ClassPowerId" ColumnName="ClassPowerId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GoalsCharacters">
+            <EntityTypeMapping TypeName="Entities.GoalsCharacter">
+              <MappingFragment StoreEntitySet="GoalsCharacters">
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="Reward" ColumnName="Reward" />
+                <ScalarProperty Name="ModTraitInitiative" ColumnName="ModTraitInitiative" />
+                <ScalarProperty Name="ModTraitDefense" ColumnName="ModTraitDefense" />
+                <ScalarProperty Name="ModTraitToughness" ColumnName="ModTraitToughness" />
+                <ScalarProperty Name="ModTraitStrength" ColumnName="ModTraitStrength" />
+                <ScalarProperty Name="ModTraitClass" ColumnName="ModTraitClass" />
+                <ScalarProperty Name="BaseTraitInitiative" ColumnName="BaseTraitInitiative" />
+                <ScalarProperty Name="BaseTraitDefense" ColumnName="BaseTraitDefense" />
+                <ScalarProperty Name="BaseTraitToughness" ColumnName="BaseTraitToughness" />
+                <ScalarProperty Name="BaseTraitStrength" ColumnName="BaseTraitStrength" />
+                <ScalarProperty Name="BaseTraitClass" ColumnName="BaseTraitClass" />
+                <ScalarProperty Name="Cost" ColumnName="Cost" />
+                <ScalarProperty Name="Speed" ColumnName="Speed" />
+                <ScalarProperty Name="HitPoints" ColumnName="HitPoints" />
+                <ScalarProperty Name="CharacterLevel" ColumnName="CharacterLevel" />
+                <ScalarProperty Name="Fate" ColumnName="Fate" />
+                <ScalarProperty Name="Alignment" ColumnName="Alignment" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="GoalsCharacterId" ColumnName="GoalsCharacterId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GoalsClasses">
+            <EntityTypeMapping TypeName="Entities.GoalsClass">
+              <MappingFragment StoreEntitySet="GoalsClasses">
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="Page" ColumnName="Page" />
+                <ScalarProperty Name="BaseClass" ColumnName="BaseClass" />
+                <ScalarProperty Name="StartingHitPoints" ColumnName="StartingHitPoints" />
+                <ScalarProperty Name="Equipment" ColumnName="Equipment" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="GoalsClassId" ColumnName="GoalsClassId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GoalsEquipments">
+            <EntityTypeMapping TypeName="Entities.GoalsEquipment">
+              <MappingFragment StoreEntitySet="GoalsEquipment">
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="Template" ColumnName="Template" />
+                <ScalarProperty Name="Page" ColumnName="Page" />
+                <ScalarProperty Name="EquipmentClass" ColumnName="EquipmentClass" />
+                <ScalarProperty Name="Cost" ColumnName="Cost" />
+                <ScalarProperty Name="Rarity" ColumnName="Rarity" />
+                <ScalarProperty Name="Effects" ColumnName="Effects" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="GoalsEquipmentId" ColumnName="GoalsEquipmentId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GoalsPowers">
+            <EntityTypeMapping TypeName="Entities.GoalsPower">
+              <MappingFragment StoreEntitySet="GoalsPowers">
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="Template" ColumnName="Template" />
+                <ScalarProperty Name="PowerClass" ColumnName="PowerClass" />
+                <ScalarProperty Name="Page" ColumnName="Page" />
+                <ScalarProperty Name="Damage" ColumnName="Damage" />
+                <ScalarProperty Name="Range" ColumnName="Range" />
+                <ScalarProperty Name="Cost" ColumnName="Cost" />
+                <ScalarProperty Name="Notes" ColumnName="Notes" />
+                <ScalarProperty Name="Effect" ColumnName="Effect" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="GoalsPowerId" ColumnName="GoalsPowerId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GoalsRaceMetas">
+            <EntityTypeMapping TypeName="Entities.GoalsRaceMeta">
+              <MappingFragment StoreEntitySet="GoalsRaceMeta">
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="Value" ColumnName="Value" />
+                <ScalarProperty Name="PropertyName" ColumnName="PropertyName" />
+                <ScalarProperty Name="GoalsCalassMetaId" ColumnName="GoalsCalassMetaId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GoalsRaces">
+            <EntityTypeMapping TypeName="Entities.GoalsRace">
+              <MappingFragment StoreEntitySet="GoalsRaces">
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="Page" ColumnName="Page" />
+                <ScalarProperty Name="Languages" ColumnName="Languages" />
+                <ScalarProperty Name="Notes" ColumnName="Notes" />
+                <ScalarProperty Name="Points" ColumnName="Points" />
+                <ScalarProperty Name="Movement" ColumnName="Movement" />
+                <ScalarProperty Name="FavoredClasses" ColumnName="FavoredClasses" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="GoalsRaceId" ColumnName="GoalsRaceId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GoalsSpells">
+            <EntityTypeMapping TypeName="Entities.GoalsSpell">
+              <MappingFragment StoreEntitySet="GoalsSpells">
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="Template" ColumnName="Template" />
+                <ScalarProperty Name="Page" ColumnName="Page" />
+                <ScalarProperty Name="School" ColumnName="School" />
+                <ScalarProperty Name="Uses" ColumnName="Uses" />
+                <ScalarProperty Name="Bonus" ColumnName="Bonus" />
+                <ScalarProperty Name="LevelBonus" ColumnName="LevelBonus" />
+                <ScalarProperty Name="Boost" ColumnName="Boost" />
+                <ScalarProperty Name="Damage" ColumnName="Damage" />
+                <ScalarProperty Name="Effects" ColumnName="Effects" />
+                <ScalarProperty Name="Range" ColumnName="Range" />
+                <ScalarProperty Name="Action" ColumnName="Action" />
+                <ScalarProperty Name="StartingLevel" ColumnName="StartingLevel" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="GoalsSpellId" ColumnName="GoalsSpellId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GoalsUsers">
+            <EntityTypeMapping TypeName="Entities.GoalsUser">
+              <MappingFragment StoreEntitySet="GoalsUsers">
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RaceFavoredClasses">
+            <EntityTypeMapping TypeName="Entities.RaceFavoredClass">
+              <MappingFragment StoreEntitySet="RaceFavoredClass">
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="RaceFavoredClassId" ColumnName="RaceFavoredClassId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RacePowers">
+            <EntityTypeMapping TypeName="Entities.RacePower">
+              <MappingFragment StoreEntitySet="RacePowers">
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+                <ScalarProperty Name="RacePowerId" ColumnName="RacePowerId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="FK_CharacterEquipment_GoalsCharacters" TypeName="Entities.FK_CharacterEquipment_GoalsCharacters" StoreEntitySet="CharacterEquipment">
+            <EndProperty Name="CharacterEquipment">
+              <ScalarProperty Name="CharacterEquipmentId" ColumnName="CharacterEquipmentId" />
+            </EndProperty>
+            <EndProperty Name="GoalsCharacter">
+              <ScalarProperty Name="GoalsCharacterId" ColumnName="GoalsCharacterId" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="FK_CharacterEquipment_GoalsEquipment" TypeName="Entities.FK_CharacterEquipment_GoalsEquipment" StoreEntitySet="CharacterEquipment">
+            <EndProperty Name="CharacterEquipment">
+              <ScalarProperty Name="CharacterEquipmentId" ColumnName="CharacterEquipmentId" />
+            </EndProperty>
+            <EndProperty Name="GoalsEquipment">
+              <ScalarProperty Name="GoalsEquipmentId" ColumnName="GoalsEquipmentId" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="FK_CharacterPowers_GoalsCharacters" TypeName="Entities.FK_CharacterPowers_GoalsCharacters" StoreEntitySet="CharacterPowers">
+            <EndProperty Name="CharacterPower">
+              <ScalarProperty Name="CharacterPowerId" ColumnName="CharacterPowerId" />
+            </EndProperty>
+            <EndProperty Name="GoalsCharacter">
+              <ScalarProperty Name="GoalsCharacterId" ColumnName="GoalsCharacterId" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="FK_CharacterPowers_GoalsPowers" TypeName="Entities.FK_CharacterPowers_GoalsPowers" StoreEntitySet="CharacterPowers">
+            <EndProperty Name="CharacterPower">
+              <ScalarProperty Name="CharacterPowerId" ColumnName="CharacterPowerId" />
+            </EndProperty>
+            <EndProperty Name="GoalsPower">
+              <ScalarProperty Name="GoalsPowerId" ColumnName="GoalsPowerId" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="FK_CharacterSpells_GoalsCharacters" TypeName="Entities.FK_CharacterSpells_GoalsCharacters" StoreEntitySet="CharacterSpells">
+            <EndProperty Name="CharacterSpell">
+              <ScalarProperty Name="CharacterSpellId" ColumnName="CharacterSpellId" />
+            </EndProperty>
+            <EndProperty Name="GoalsCharacter">
+              <ScalarProperty Name="GoalsCharacterId" ColumnName="GoalsCharacterId" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="FK_CharacterSpells_GoalsSpells" TypeName="Entities.FK_CharacterSpells_GoalsSpells" StoreEntitySet="CharacterSpells">
+            <EndProperty Name="CharacterSpell">
+              <ScalarProperty Name="CharacterSpellId" ColumnName="CharacterSpellId" />
+            </EndProperty>
+            <EndProperty Name="GoalsSpell">
+              <ScalarProperty Name="GoalsSpellId" ColumnName="GoalsSpellId" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="FK_ClassEquipment_GoalsClasses" TypeName="Entities.FK_ClassEquipment_GoalsClasses" StoreEntitySet="ClassEquipment">
+            <EndProperty Name="ClassEquipment">
+              <ScalarProperty Name="ClassEquipmentId" ColumnName="ClassEquipmentId" />
+            </EndProperty>
+            <EndProperty Name="GoalsClass">
+              <ScalarProperty Name="GoalsClassId" ColumnName="GoalsClassId" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="FK_ClassEquipment_GoalsEquipment" TypeName="Entities.FK_ClassEquipment_GoalsEquipment" StoreEntitySet="ClassEquipment">
+            <EndProperty Name="ClassEquipment">
+              <ScalarProperty Name="ClassEquipmentId" ColumnName="ClassEquipmentId" />
+            </EndProperty>
+            <EndProperty Name="GoalsEquipment">
+              <ScalarProperty Name="GoalsEquipmentId" ColumnName="GoalsEquipmentId" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="FK_ClassPowers_GoalsClasses" TypeName="Entities.FK_ClassPowers_GoalsClasses" StoreEntitySet="ClassPowers">
+            <EndProperty Name="ClassPower">
+              <ScalarProperty Name="ClassPowerId" ColumnName="ClassPowerId" />
+            </EndProperty>
+            <EndProperty Name="GoalsClass">
+              <ScalarProperty Name="GoalsClassId" ColumnName="GoalsClassId" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="FK_ClassPowers_GoalsPowers" TypeName="Entities.FK_ClassPowers_GoalsPowers" StoreEntitySet="ClassPowers">
+            <EndProperty Name="ClassPower">
+              <ScalarProperty Name="ClassPowerId" ColumnName="ClassPowerId" />
+            </EndProperty>
+            <EndProperty Name="GoalsPower">
+              <ScalarProperty Name="GoalsPowerId" ColumnName="GoalsPowerId" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="FK_GoalsCharacters_GoalsClasses" TypeName="Entities.FK_GoalsCharacters_GoalsClasses" StoreEntitySet="GoalsCharacters">
+            <EndProperty Name="GoalsCharacter">
+              <ScalarProperty Name="GoalsCharacterId" ColumnName="GoalsCharacterId" />
+            </EndProperty>
+            <EndProperty Name="GoalsClass">
+              <ScalarProperty Name="GoalsClassId" ColumnName="GoalsClassId" />
+            </EndProperty>
+            <Condition ColumnName="GoalsClassId" IsNull="false" />
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="FK_GoalsCharacters_GoalsRaces1" TypeName="Entities.FK_GoalsCharacters_GoalsRaces1" StoreEntitySet="GoalsCharacters">
+            <EndProperty Name="GoalsCharacter">
+              <ScalarProperty Name="GoalsCharacterId" ColumnName="GoalsCharacterId" />
+            </EndProperty>
+            <EndProperty Name="GoalsRace">
+              <ScalarProperty Name="GoalsRaceId" ColumnName="GoalsRaceId" />
+            </EndProperty>
+            <Condition ColumnName="GoalsRaceId" IsNull="false" />
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="FK_GoalsCharacters_GoalsUsers" TypeName="Entities.FK_GoalsCharacters_GoalsUsers" StoreEntitySet="GoalsCharacters">
+            <EndProperty Name="GoalsCharacter">
+              <ScalarProperty Name="GoalsCharacterId" ColumnName="GoalsCharacterId" />
+            </EndProperty>
+            <EndProperty Name="GoalsUser">
+              <ScalarProperty Name="UserId" ColumnName="UserId" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="FK_RaceFavoredClass_GoalsClasses" TypeName="Entities.FK_RaceFavoredClass_GoalsClasses" StoreEntitySet="RaceFavoredClass">
+            <EndProperty Name="RaceFavoredClass">
+              <ScalarProperty Name="RaceFavoredClassId" ColumnName="RaceFavoredClassId" />
+            </EndProperty>
+            <EndProperty Name="GoalsClass">
+              <ScalarProperty Name="GoalsClassId" ColumnName="GoalsClassId" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="FK_RacePowers_GoalsPowers" TypeName="Entities.FK_RacePowers_GoalsPowers" StoreEntitySet="RacePowers">
+            <EndProperty Name="RacePower">
+              <ScalarProperty Name="RacePowerId" ColumnName="RacePowerId" />
+            </EndProperty>
+            <EndProperty Name="GoalsPower">
+              <ScalarProperty Name="GoalsPowerId" ColumnName="GoalsPowerId" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="FK_GoalsRaceMeta_GoalsRaces" TypeName="Entities.FK_GoalsRaceMeta_GoalsRaces" StoreEntitySet="GoalsRaceMeta">
+            <EndProperty Name="GoalsRaceMeta">
+              <ScalarProperty Name="GoalsCalassMetaId" ColumnName="GoalsCalassMetaId" />
+            </EndProperty>
+            <EndProperty Name="GoalsRace">
+              <ScalarProperty Name="GoalsRaceId" ColumnName="GoalsRaceId" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="FK_RaceFavoredClass_GoalsRaces" TypeName="Entities.FK_RaceFavoredClass_GoalsRaces" StoreEntitySet="RaceFavoredClass">
+            <EndProperty Name="RaceFavoredClass">
+              <ScalarProperty Name="RaceFavoredClassId" ColumnName="RaceFavoredClassId" />
+            </EndProperty>
+            <EndProperty Name="GoalsRace">
+              <ScalarProperty Name="GoalsRaceId" ColumnName="GoalsRaceId" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="FK_RacePowers_GoalsRaces" TypeName="Entities.FK_RacePowers_GoalsRaces" StoreEntitySet="RacePowers">
+            <EndProperty Name="RacePower">
+              <ScalarProperty Name="RacePowerId" ColumnName="RacePowerId" />
+            </EndProperty>
+            <EndProperty Name="GoalsRace">
+              <ScalarProperty Name="GoalsRaceId" ColumnName="GoalsRaceId" />
+            </EndProperty>
+          </AssociationSetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="False" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="Model1" ZoomLevel="65">
+        <EntityTypeShape EntityType="Entities.CharacterEquipment" Width="1.5" PointX="8.25" PointY="8.75" Height="2.172587890624996" />
+        <EntityTypeShape EntityType="Entities.CharacterPower" Width="1.5" PointX="8.25" PointY="5.75" Height="2.172587890624996" />
+        <EntityTypeShape EntityType="Entities.CharacterSpell" Width="1.5" PointX="8.25" PointY="11.75" Height="2.172587890624996" />
+        <EntityTypeShape EntityType="Entities.ClassEquipment" Width="1.5" PointX="3" PointY="8.875" Height="1.9802864583333388" />
+        <EntityTypeShape EntityType="Entities.ClassPower" Width="1.5" PointX="3" PointY="5.875" Height="1.9802864583333388" />
+        <EntityTypeShape EntityType="Entities.GoalsCharacter" Width="1.5" PointX="6" PointY="6.75" Height="6.2109179687500067" />
+        <EntityTypeShape EntityType="Entities.GoalsClass" Width="1.5" PointX="0.75" PointY="8.125" Height="3.5186979166666674" />
+        <EntityTypeShape EntityType="Entities.GoalsEquipment" Width="1.5" PointX="0.75" PointY="13.125" Height="3.5186979166666674" />
+        <EntityTypeShape EntityType="Entities.GoalsPower" Width="1.5" PointX="0.75" PointY="2.875" Height="4.0956022135416674" />
+        <EntityTypeShape EntityType="Entities.GoalsRaceMeta" Width="1.5" PointX="6" PointY="1.625" Height="2.172587890624996" />
+        <EntityTypeShape EntityType="Entities.GoalsRace" Width="1.5" PointX="3.75" PointY="0.75" Height="3.903300781249996" />
+        <EntityTypeShape EntityType="Entities.GoalsSpell" Width="1.5" PointX="6" PointY="13.75" Height="4.2879036458333246" />
+        <EntityTypeShape EntityType="Entities.GoalsUser" Width="1.5" PointX="3.75" PointY="15.375" Height="1.5956835937499978" />
+        <EntityTypeShape EntityType="Entities.RaceFavoredClass" Width="1.5" PointX="3" PointY="11.875" Height="1.9802864583333388" />
+        <EntityTypeShape EntityType="Entities.RacePower" Width="1.5" PointX="9" PointY="2.875" Height="1.9802864583333388" />
+        <AssociationConnector Association="Entities.FK_CharacterEquipment_GoalsCharacters" >
+          <ConnectorPoint PointX="7.5" PointY="9.836293945312498" />
+          <ConnectorPoint PointX="8.25" PointY="9.836293945312498" />
+        </AssociationConnector>
+        <AssociationConnector Association="Entities.FK_CharacterEquipment_GoalsEquipment" >
+          <ConnectorPoint PointX="2.25" PointY="14.615143229166669" />
+          <ConnectorPoint PointX="4.994791666666667" PointY="14.615143229166669" />
+          <ConnectorPoint PointX="5.161458333333333" PointY="14.615143229166669" />
+          <ConnectorPoint PointX="5.75" PointY="14.615143229166669" />
+          <ConnectorPoint PointX="5.75" PointY="13.5" />
+          <ConnectorPoint PointX="8" PointY="13.5" />
+          <ConnectorPoint PointX="8" PointY="11.5" />
+          <ConnectorPoint PointX="9" PointY="11.5" />
+          <ConnectorPoint PointX="9" PointY="10.922587890624996" />
+        </AssociationConnector>
+        <AssociationConnector Association="Entities.FK_CharacterPowers_GoalsCharacters" >
+          <ConnectorPoint PointX="7.5" PointY="7.336293945312498" />
+          <ConnectorPoint PointX="8.25" PointY="7.336293945312498" />
+        </AssociationConnector>
+        <AssociationConnector Association="Entities.FK_CharacterPowers_GoalsPowers" >
+          <ConnectorPoint PointX="2.25" PointY="5.78125" />
+          <ConnectorPoint PointX="4.822916666666667" PointY="5.7812499999999991" />
+          <ConnectorPoint PointX="4.989583333333333" PointY="5.78125" />
+          <ConnectorPoint PointX="5.080729166666667" PointY="5.7812499999999991" />
+          <ConnectorPoint PointX="5.247395833333333" PointY="5.78125" />
+          <ConnectorPoint PointX="8.25" PointY="5.78125" />
+        </AssociationConnector>
+        <AssociationConnector Association="Entities.FK_CharacterSpells_GoalsCharacters" >
+          <ConnectorPoint PointX="7.5" PointY="12.355458984375003" />
+          <ConnectorPoint PointX="7.916666666666667" PointY="12.355458984375003" />
+          <ConnectorPoint PointX="8.0833333333333339" PointY="12.355458984375003" />
+          <ConnectorPoint PointX="8.25" PointY="12.355458984375003" />
+        </AssociationConnector>
+        <AssociationConnector Association="Entities.FK_CharacterSpells_GoalsSpells" >
+          <ConnectorPoint PointX="7.5" PointY="15.980246268229159" />
+          <ConnectorPoint PointX="9" PointY="15.980246268229159" />
+          <ConnectorPoint PointX="9" PointY="13.922587890624996" />
+        </AssociationConnector>
+        <AssociationConnector Association="Entities.FK_ClassEquipment_GoalsClasses" >
+          <ConnectorPoint PointX="2.25" PointY="9.86514322916667" />
+          <ConnectorPoint PointX="3" PointY="9.86514322916667" />
+        </AssociationConnector>
+        <AssociationConnector Association="Entities.FK_ClassEquipment_GoalsEquipment" >
+          <ConnectorPoint PointX="2.25" PointY="13.126152846153847" />
+          <ConnectorPoint PointX="2.625" PointY="12.751152846153847" />
+          <ConnectorPoint PointX="2.625" PointY="10.391466843750006" />
+          <ConnectorPoint PointX="3" PointY="10.391466843750006" />
+        </AssociationConnector>
+        <AssociationConnector Association="Entities.FK_ClassPowers_GoalsClasses" >
+          <ConnectorPoint PointX="2.25" PointY="8.1261528461538468" />
+          <ConnectorPoint PointX="2.625" PointY="7.7511528461538468" />
+          <ConnectorPoint PointX="2.625" PointY="8.2302864583333388" />
+          <ConnectorPoint PointX="3" PointY="7.8552864583333388" />
+        </AssociationConnector>
+        <AssociationConnector Association="Entities.FK_ClassPowers_GoalsPowers" >
+          <ConnectorPoint PointX="2.25" PointY="6.4228011067708337" />
+          <ConnectorPoint PointX="3" PointY="6.4228011067708337" />
+        </AssociationConnector>
+        <AssociationConnector Association="Entities.FK_GoalsCharacters_GoalsClasses" >
+          <ConnectorPoint PointX="2.25" PointY="11.280742187500003" />
+          <ConnectorPoint PointX="2.5416666666666665" PointY="11.280742187500003" />
+          <ConnectorPoint PointX="2.7083333333333335" PointY="11.280742187500003" />
+          <ConnectorPoint PointX="5.080729166666667" PointY="11.280742187500003" />
+          <ConnectorPoint PointX="5.247395833333333" PointY="11.280742187500003" />
+          <ConnectorPoint PointX="6" PointY="11.280742187500003" />
+        </AssociationConnector>
+        <AssociationConnector Association="Entities.FK_GoalsCharacters_GoalsRaces1" >
+          <ConnectorPoint PointX="4.90625" PointY="4.653300781249996" />
+          <ConnectorPoint PointX="4.90625" PointY="8.36514322916667" />
+          <ConnectorPoint PointX="5.080729166666667" PointY="8.36514322916667" />
+          <ConnectorPoint PointX="5.247395833333333" PointY="8.36514322916667" />
+          <ConnectorPoint PointX="6" PointY="8.36514322916667" />
+        </AssociationConnector>
+        <AssociationConnector Association="Entities.FK_GoalsCharacters_GoalsUsers" >
+          <ConnectorPoint PointX="5.078125" PointY="15.375" />
+          <ConnectorPoint PointX="5.078125" PointY="11.577873593749995" />
+          <ConnectorPoint PointX="5.080729166666667" PointY="11.577873593749995" />
+          <ConnectorPoint PointX="5.247395833333333" PointY="11.577873593749995" />
+          <ConnectorPoint PointX="6" PointY="11.577873593749995" />
+        </AssociationConnector>
+        <AssociationConnector Association="Entities.FK_RaceFavoredClass_GoalsClasses" >
+          <ConnectorPoint PointX="2.25" PointY="11.581389224358976" />
+          <ConnectorPoint PointX="2.5660744349011213" PointY="11.897463659260096" />
+          <ConnectorPoint PointX="2.6839255650988791" PointY="12.015314789457854" />
+          <ConnectorPoint PointX="2.8125" PointY="12.143889224358976" />
+          <ConnectorPoint PointX="2.8125" PointY="11.686347153846153" />
+          <ConnectorPoint PointX="3.0011528461538459" PointY="11.875" />
+        </AssociationConnector>
+        <AssociationConnector Association="Entities.FK_RacePowers_GoalsPowers" >
+          <ConnectorPoint PointX="2.25" PointY="4.7855436197916674" />
+          <ConnectorPoint PointX="4.822916666666667" PointY="4.7855436197916665" />
+          <ConnectorPoint PointX="4.989583333333333" PointY="4.7855436197916674" />
+          <ConnectorPoint PointX="5.080729166666667" PointY="4.7855436197916665" />
+          <ConnectorPoint PointX="5.247395833333333" PointY="4.7855436197916674" />
+          <ConnectorPoint PointX="9" PointY="4.7855436197916674" />
+        </AssociationConnector>
+        <AssociationConnector Association="Entities.FK_GoalsRaceMeta_GoalsRaces" >
+          <ConnectorPoint PointX="5.25" PointY="2.711293945312498" />
+          <ConnectorPoint PointX="6" PointY="2.711293945312498" />
+        </AssociationConnector>
+        <AssociationConnector Association="Entities.FK_RaceFavoredClass_GoalsRaces" >
+          <ConnectorPoint PointX="5.1640625" PointY="4.653300781249996" />
+          <ConnectorPoint PointX="5.1640625" PointY="12.865143229166669" />
+          <ConnectorPoint PointX="5.161458333333333" PointY="12.865143229166669" />
+          <ConnectorPoint PointX="4.994791666666667" PointY="12.865143229166669" />
+          <ConnectorPoint PointX="4.5" PointY="12.865143229166669" />
+        </AssociationConnector>
+        <AssociationConnector Association="Entities.FK_RacePowers_GoalsRaces" >
+          <ConnectorPoint PointX="5.25" PointY="4.256694335937496" />
+          <ConnectorPoint PointX="9" PointY="4.256694335937496" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

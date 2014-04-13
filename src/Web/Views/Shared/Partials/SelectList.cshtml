@@ -1,0 +1,46 @@
+﻿@using GoalsCharacterSheet.Web.Models.Contracts;
+@using GoalsCharacterSheet.Web.Runtime;
+@model List<IDisplay>
+@if (Model.Count <= 0)
+{
+    <p>
+        No Items</p>   
+}
+else
+{
+    var first = Model[0];
+    <table id="@string.Format("{0}Select", ControllerName)" class="table table-striped">
+        <thead>
+            <tr>
+                <th style="display: none;">
+                    Id
+                </th>
+                @foreach (var field in first.Fields)
+                {
+                    <th>@field.Key.ToSpacedString()</th>
+                }
+                <th>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td style="display: none;">
+                        <input class="rowId" type="hidden" value="@item.Id" />
+                    </td>
+                    @foreach (var field in first.Fields)
+                    {
+                        <td>@item.Fields[field.Key]
+                        </td>
+                    }
+                    <td>
+                        <button type="button" class="btn select">
+                            Select</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

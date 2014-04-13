@@ -1,0 +1,26 @@
+﻿@using GoalsCharacterSheet.Web.Models.Contracts;
+@using GoalsCharacterSheet.Web.Runtime;
+@model ICreate
+<form id="@string.Format("{0}Create", ControllerName)" class="row">
+<fieldset>
+    <legend>@Title</legend>
+    @foreach (var item in Model.NewFields)
+    {
+        if (item != "Id")
+        {
+        <div class="control-group">
+            <label class="span8" for="@item">@item.ToSpacedString()</label>
+            <div class="controls">
+                <input class="span8" name="@item" type="text" />
+            </div>
+        </div>
+        }
+    }
+</fieldset>
+<div class="form-actions">
+    <button type="submit" class="btn btn-primary">
+        Save</button>
+    <button type="submit" class="btn">
+        Cancel</button>
+</div>
+</form>

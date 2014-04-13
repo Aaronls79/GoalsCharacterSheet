@@ -1,0 +1,65 @@
+﻿@model GoalsCharacterSheet.Web.Models.GoalsCharacterViewModel
+@using GoalsCharacterSheet.Core.Entities
+<fieldset>
+    <legend></legend>
+    <div class="control-group">
+        <div class="controls controls-row">
+            <label class="span6" for="name">
+                Name</label>
+            <label class="span2" for="fate">
+                Fate</label>
+            <input class="span6" id="Name" name="Name" type="text" value="@Model.Entity.Name.Trim()" />
+            <input class="span2" id="Fate" name="Fate" type="number" value="@Model.Entity.Fate" />
+        </div>
+    </div>
+    <div class="control-group">
+        <div class="controls controls-row">
+            <label class="span6" for="race">
+                Race</label>
+            <label class="span2" for="level">
+                Level</label>
+            <div class="input-append span6">
+                <input type="hidden" id="GoalsRaceId" name="GoalsRaceId" value="@Model.Entity.GoalsRaceId" />
+                <input id="RaceName" class="span4" type="text" name="RaceName" value="@Model.Entity.RaceName" disabled />
+                <button id="RaceDetails" class="btn" type="button" style="width: 80px" @(@Model.Entity.GoalsRaceId == 0 ? "disabled" : "")>
+                    Details</button>
+                <button id="SelectRace" class="btn" type="button" style="width: 80px">
+                    Select</button>
+            </div>
+            <input class="span2" id="CharacterLevel" name="CharacterLevel" type="number" value="@Model.Entity.CharacterLevel" />
+        </div>
+    </div>
+    <div class="control-group">
+        <div class="controls controls-row">
+            <label class="span6" for="alignment">
+                Class</label>
+            <label class="span2" for="reward">
+                Reward Lvl / PWS</label>
+            <div class="input-append span6">
+                <input type="hidden" id="GoalsClassId" name="GoalsClassId" value="@Model.Entity.GoalsClassId" />
+                <input class="span4" id="alignment" type="text" value="@Model.Entity.ClassName" disabled />
+                <button id="ClassDetails" class="btn" type="button" style="width: 80px" @(@Model.Entity.GoalsClassId == 0 ? "disabled" : "")>
+                    Details</button>
+                <button id="SelectClass" class="btn" type="button" style="width: 80px">
+                    Select</button>
+            </div>
+            <input class="span2" id="Reward" name="Reward" type="number" value="@Model.Entity.Reward" />
+        </div>
+    </div>
+    <div class="control-group">
+        <div class="controls controls-row">
+            <label class="span2" for="move">
+                Move</label>
+            <label class="span2" for="cost">
+                Cost</label>
+            <label class="span2" for="health">
+                Health</label>
+            <label class="span6" for="Alignment">
+                Alignment</label>
+            <input class="span2" id="Speed" name="Speed" type="number" value="@Model.Entity.Speed" />
+            <input class="span2" id="Cost" name="Cost" type="number" value="@Model.Entity.Cost" />
+            <input class="span2" id="HitPoints" name="HitPoints" type="number" value="@Model.Entity.HitPoints" />
+            <input class="span2" id="Alignment" name="Alignment" type="text" value="@Model.Entity.Alignment" />
+        </div>
+    </div>
+</fieldset>

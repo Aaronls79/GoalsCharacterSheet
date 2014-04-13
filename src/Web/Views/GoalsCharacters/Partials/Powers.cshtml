@@ -1,0 +1,75 @@
+﻿@model GoalsCharacterSheet.Web.Models.GoalsCharacterViewModel
+<fieldset id="GoalsPowers">
+    <legend>Powers</legend>
+    <div class="btn-group">
+        <button id="AddPower" type="button" class="btn">
+            Add</button>
+    </div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th style="display: none;">
+                    Id
+                </th>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Type
+                </th>
+                <th>
+                    Power Class
+                </th>
+                <th>
+                    Cost
+                </th>
+                <th>
+                    Page #
+                </th>
+                <th>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.Entity.CharacterPowers.Count() == 0)
+            { 
+                <tr>
+                    <td colspan="6">
+                        No Powers
+                    </td>
+                </tr>
+            }
+            @foreach (var item in Model.Entity.CharacterPowers.OrderBy(x=>x.GoalsPower.Name))
+            {
+                <tr>
+                    <td style="display: none;">
+                        <input type="hidden" class="rowId" value="@item.GoalsPower.GoalsPowerId" />
+                    </td>
+                    <td>
+                        @item.GoalsPower.Name
+                    </td>
+                    <td>
+                        @item.GoalsPower.Type
+                    </td>
+                    <td>
+                        @item.GoalsPower.PowerClass
+                    </td>
+                    <td>
+                        @item.GoalsPower.Cost
+                    </td>
+                    <td>
+                        @item.GoalsPower.Page
+                    </td>
+                    <td>
+                        <div class="btn-group">
+                            <button type="button" class="rowDetails btn">
+                                Details</button>
+                            <button type="button" class="removeRow btn">
+                                Remove</button>
+                        </div>
+                    </td>
+                </tr>  
+            }
+        </tbody>
+    </table>
+</fieldset>

@@ -1,0 +1,646 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">True</setting>
+      <setting name="SolutionAnalysisEnabled">True</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="B659BB4A-7144-47AC-A98A-3B8063C6E0A9/d:Views/d:GoalsCharacters/d:Partials/f:Equipment.cshtml" caret="1153" fromTop="0" />
+      <File id="B659BB4A-7144-47AC-A98A-3B8063C6E0A9/d:Views/d:GoalsCharacters/d:Partials/f:Spells.cshtml" caret="1020" fromTop="4" />
+      <File id="B659BB4A-7144-47AC-A98A-3B8063C6E0A9/d:Controllers/f:PrintController.cs" caret="451" fromTop="18" />
+      <File id="B659BB4A-7144-47AC-A98A-3B8063C6E0A9/d:Controllers/f:GoalsEquipmentsController.cs" caret="1902" fromTop="16" />
+      <File id="6DBE9E81-EFC8-4CFE-9ACC-0AA49718A0A0/f:App.Config" caret="682" fromTop="9" />
+      <File id="6DBE9E81-EFC8-4CFE-9ACC-0AA49718A0A0/d:Entities/f:GCSModelMapper.Designer.cs" caret="7518" fromTop="12" />
+      <File id="B659BB4A-7144-47AC-A98A-3B8063C6E0A9/d:Views/d:GoalsCharacters/d:Partials/f:Traits.cshtml" caret="288" fromTop="5" />
+      <File id="B659BB4A-7144-47AC-A98A-3B8063C6E0A9/d:Views/d:Shared/d:Partials/f:Details.cshtml" caret="537" fromTop="12" />
+      <File id="B659BB4A-7144-47AC-A98A-3B8063C6E0A9/d:Views/d:Home/f:Index.cshtml" caret="190" fromTop="7" />
+      <File id="B659BB4A-7144-47AC-A98A-3B8063C6E0A9/d:Views/d:Shared/f:Login.cshtml" caret="253" fromTop="5" />
+      <File id="B659BB4A-7144-47AC-A98A-3B8063C6E0A9/d:Views/d:Shared/f:Error.cshtml" caret="0" fromTop="0" />
+      <File id="B659BB4A-7144-47AC-A98A-3B8063C6E0A9/d:Views/d:GoalsCharacters/f:Edit.cshtml" caret="776" fromTop="16" />
+      <File id="B659BB4A-7144-47AC-A98A-3B8063C6E0A9/d:Scripts/d:Views/f:GoalsCharacters.js" caret="3069" fromTop="19" />
+      <File id="B659BB4A-7144-47AC-A98A-3B8063C6E0A9/d:Controllers/f:BaseController.cs" caret="4579" fromTop="132" />
+      <File id="B659BB4A-7144-47AC-A98A-3B8063C6E0A9/d:Views/d:Shared/f:Index.cshtml" caret="0" fromTop="0" />
+      <File id="B659BB4A-7144-47AC-A98A-3B8063C6E0A9/d:Views/d:Shared/f:_Layout.cshtml" caret="3113" fromTop="11" />
+      <File id="B659BB4A-7144-47AC-A98A-3B8063C6E0A9/d:App_Start/f:AuthConfig.cs" caret="419" fromTop="10" />
+      <File id="6DBE9E81-EFC8-4CFE-9ACC-0AA49718A0A0/d:Entities/f:GoalsCharacter.cs" caret="395" fromTop="10" />
+      <File id="6DBE9E81-EFC8-4CFE-9ACC-0AA49718A0A0/d:Entities/f:CharacterEquipment.cs" caret="0" fromTop="0" />
+      <File id="B659BB4A-7144-47AC-A98A-3B8063C6E0A9/d:Runtime/f:ControllerExtensions.cs" caret="177" fromTop="7" />
+      <File id="B659BB4A-7144-47AC-A98A-3B8063C6E0A9/d:Views/d:GoalsCharacters/d:Partials/f:BasicDetails.cshtml" caret="571" fromTop="11" />
+      <File id="B659BB4A-7144-47AC-A98A-3B8063C6E0A9/d:Controllers/f:GoalsCharactersController.cs" caret="1634" fromTop="7" />
+      <File id="B659BB4A-7144-47AC-A98A-3B8063C6E0A9/d:Views/d:Shared/d:Partials/f:List.cshtml" caret="644" fromTop="23" />
+      <File id="B659BB4A-7144-47AC-A98A-3B8063C6E0A9/d:Resources/f:GoalsEffectsTitleItem.txt" caret="0" fromTop="0" />
+      <File id="B659BB4A-7144-47AC-A98A-3B8063C6E0A9/d:Resources/f:GoalsEffectsTemplate.txt" caret="0" fromTop="0" />
+      <File id="B659BB4A-7144-47AC-A98A-3B8063C6E0A9/d:Resources/f:GoalsEffectsBodyItemTemplate.txt" caret="91" fromTop="3" />
+      <File id="B659BB4A-7144-47AC-A98A-3B8063C6E0A9/d:Resources/f:GoalsSheetTemplate.txt" caret="4289" fromTop="23" />
+      <File id="B659BB4A-7144-47AC-A98A-3B8063C6E0A9/d:Runtime/f:GoalsPrintSheetManager.cs" caret="1688" fromTop="24" />
+      <File id="B659BB4A-7144-47AC-A98A-3B8063C6E0A9/d:Controllers/f:AccountController.cs" caret="3224" fromTop="18" />
+      <File id="B659BB4A-7144-47AC-A98A-3B8063C6E0A9/f:Web.config" caret="1413" fromTop="12" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="B659BB4A-7144-47AC-A98A-3B8063C6E0A9/d:Runtime/f:GoalsPrintSheetManager.cs" caret="3488" fromTop="16" />
+      <File id="B659BB4A-7144-47AC-A98A-3B8063C6E0A9/d:Runtime/f:GoalsPrintSheetManager.cs" caret="3744" fromTop="21" />
+      <File id="B659BB4A-7144-47AC-A98A-3B8063C6E0A9/d:Runtime/f:GoalsPrintSheetManager.cs" caret="4517" fromTop="26" />
+      <File id="B659BB4A-7144-47AC-A98A-3B8063C6E0A9/d:Runtime/f:GoalsPrintSheetManager.cs" caret="4240" fromTop="21" />
+      <File id="B659BB4A-7144-47AC-A98A-3B8063C6E0A9/d:Runtime/f:GoalsPrintSheetManager.cs" caret="5510" fromTop="25" />
+      <File id="B659BB4A-7144-47AC-A98A-3B8063C6E0A9/d:Runtime/f:GoalsPrintSheetManager.cs" caret="5903" fromTop="23" />
+      <File id="B659BB4A-7144-47AC-A98A-3B8063C6E0A9/d:Runtime/f:GoalsPrintSheetManager.cs" caret="6282" fromTop="31" />
+      <File id="B659BB4A-7144-47AC-A98A-3B8063C6E0A9/d:Runtime/f:GoalsPrintSheetManager.cs" caret="6657" fromTop="23" />
+      <File id="B659BB4A-7144-47AC-A98A-3B8063C6E0A9/d:Runtime/f:GoalsPrintSheetManager.cs" caret="7492" fromTop="21" />
+      <File id="B659BB4A-7144-47AC-A98A-3B8063C6E0A9/d:Runtime/f:GoalsPrintSheetManager.cs" caret="7794" fromTop="27" />
+      <File id="B659BB4A-7144-47AC-A98A-3B8063C6E0A9/d:Runtime/f:GoalsPrintSheetManager.cs" caret="7945" fromTop="22" />
+      <File id="B659BB4A-7144-47AC-A98A-3B8063C6E0A9/d:Runtime/f:GoalsPrintSheetManager.cs" caret="8783" fromTop="14" />
+      <File id="B659BB4A-7144-47AC-A98A-3B8063C6E0A9/d:Runtime/f:GoalsPrintSheetManager.cs" caret="9534" fromTop="29" />
+      <File id="B659BB4A-7144-47AC-A98A-3B8063C6E0A9/d:Runtime/f:GoalsPrintSheetManager.cs" caret="9950" fromTop="27" />
+      <File id="B659BB4A-7144-47AC-A98A-3B8063C6E0A9/d:Runtime/f:GoalsPrintSheetManager.cs" caret="10331" fromTop="25" />
+      <File id="B659BB4A-7144-47AC-A98A-3B8063C6E0A9/d:Runtime/f:GoalsPrintSheetManager.cs" caret="11346" fromTop="29" />
+      <File id="B659BB4A-7144-47AC-A98A-3B8063C6E0A9/d:Runtime/f:GoalsPrintSheetManager.cs" caret="11796" fromTop="30" />
+      <File id="B659BB4A-7144-47AC-A98A-3B8063C6E0A9/d:Views/d:GoalsCharacters/d:Partials/f:BasicDetails.cshtml" caret="469" fromTop="10" />
+      <File id="B659BB4A-7144-47AC-A98A-3B8063C6E0A9/d:Runtime/f:GoalsPrintSheetManager.cs" caret="9078" fromTop="18" />
+      <File id="B659BB4A-7144-47AC-A98A-3B8063C6E0A9/d:Resources/f:GoalsSheetTemplate.txt" caret="5914" fromTop="127" />
+      <File id="B659BB4A-7144-47AC-A98A-3B8063C6E0A9/d:Resources/f:GoalsSheetTemplate.txt" caret="454" fromTop="18" />
+      <File id="B659BB4A-7144-47AC-A98A-3B8063C6E0A9/d:Resources/f:GoalsSheetTemplate.txt" caret="4841" fromTop="34" />
+      <File id="B659BB4A-7144-47AC-A98A-3B8063C6E0A9/d:Resources/f:GoalsSheetTemplate.txt" caret="4398" fromTop="9" />
+      <File id="B659BB4A-7144-47AC-A98A-3B8063C6E0A9/d:Resources/f:GoalsSheetTemplate.txt" caret="5246" fromTop="34" />
+      <File id="B659BB4A-7144-47AC-A98A-3B8063C6E0A9/d:Runtime/f:GoalsPrintSheetManager.cs" caret="553" fromTop="10" />
+      <File id="B659BB4A-7144-47AC-A98A-3B8063C6E0A9/d:Runtime/f:GoalsPrintSheetManager.cs" caret="724" fromTop="12" />
+      <File id="B659BB4A-7144-47AC-A98A-3B8063C6E0A9/d:Runtime/f:GoalsPrintSheetManager.cs" caret="1688" fromTop="25" />
+      <File id="B659BB4A-7144-47AC-A98A-3B8063C6E0A9/d:Runtime/f:GoalsPrintSheetManager.cs" caret="1688" fromTop="24" />
+      <File id="B659BB4A-7144-47AC-A98A-3B8063C6E0A9/d:Controllers/f:AccountController.cs" caret="3224" fromTop="11" />
+      <File id="B659BB4A-7144-47AC-A98A-3B8063C6E0A9/f:Web.config" caret="1413" fromTop="12" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="EntityBase`0" priority="0" />
+      <Item value="interface" priority="0" />
+      <Item value="IEntity`0" priority="0" />
+      <Item value="Id" priority="0" />
+      <Item value="this" priority="29" />
+      <Item value="return" priority="32" />
+      <Item value="value" priority="10" />
+      <Item value="thr" priority="5" />
+      <Item value="toar" priority="1" />
+      <Item value="var" priority="38" />
+      <Item value="GetItem`0" priority="3" />
+      <Item value="model" priority="18" />
+      <Item value="virtual" priority="4" />
+      <Item value="using" priority="2" />
+      <Item value="context" priority="34" />
+      <Item value="new" priority="27" />
+      <Item value="GoalsPowerViewModel" priority="0" />
+      <Item value="id" priority="4" />
+      <Item value="from" priority="12" />
+      <Item value="max" priority="2" />
+      <Item value="page" priority="0" />
+      <Item value="select" priority="6" />
+      <Item value="GoalsPowerViewModel`0" priority="4" />
+      <Item value="goalsPower" priority="7" />
+      <Item value="entitiy" priority="0" />
+      <Item value="List&lt;IDisplay&gt;" priority="0" />
+      <Item value="prop" priority="0" />
+      <Item value="bool" priority="4" />
+      <Item value="public" priority="10" />
+      <Item value="if" priority="38" />
+      <Item value="controller" priority="0" />
+      <Item value="false" priority="5" />
+      <Item value="entitiies" priority="2" />
+      <Item value="else" priority="6" />
+      <Item value="propertyType" priority="0" />
+      <Item value="typeof" priority="4" />
+      <Item value="string" priority="29" />
+      <Item value="long" priority="0" />
+      <Item value="byte" priority="0" />
+      <Item value="true" priority="7" />
+      <Item value="propertyInfo" priority="0" />
+      <Item value="CanEdit" priority="2" />
+      <Item value="ViewBag" priority="2" />
+      <Item value="protected" priority="3" />
+      <Item value="arg" priority="0" />
+      <Item value="RedirectToAction`0" priority="2" />
+      <Item value="Authorize" priority="0" />
+      <Item value="DefaultViewLocationCache`0" priority="0" />
+      <Item value="GoalsUser`0" priority="0" />
+      <Item value="foreach" priority="7" />
+      <Item value="display" priority="2" />
+      <Item value="field" priority="5" />
+      <Item value="null" priority="21" />
+      <Item value="_fields" priority="2" />
+      <Item value="orderedFields" priority="0" />
+      <Item value="GoalsCharacter`0" priority="0" />
+      <Item value="item" priority="14" />
+      <Item value="GoalsCharacterViewModel" priority="1" />
+      <Item value="character" priority="14" />
+      <Item value="as" priority="2" />
+      <Item value="IDisplay`0" priority="4" />
+      <Item value="int" priority="9" />
+      <Item value="ArgumentException`0" priority="1" />
+      <Item value="User" priority="0" />
+      <Item value="user" priority="0" />
+      <Item value="Name" priority="4" />
+      <Item value="HitPoints" priority="1" />
+      <Item value="Speed" priority="1" />
+      <Item value="Alignment" priority="0" />
+      <Item value="Fate" priority="0" />
+      <Item value="CharacterLevel" priority="0" />
+      <Item value="Cost" priority="1" />
+      <Item value="BaseTraitClass" priority="1" />
+      <Item value="BaseTraitDefense" priority="1" />
+      <Item value="BaseTraitInitiative" priority="1" />
+      <Item value="BaseTraitStrength" priority="1" />
+      <Item value="BaseTraitToughness" priority="1" />
+      <Item value="ModTraitClass" priority="1" />
+      <Item value="ModTraitDefense" priority="0" />
+      <Item value="ModTraitInitiative" priority="0" />
+      <Item value="ModTraitStrength" priority="0" />
+      <Item value="ModTraitToughness" priority="0" />
+      <Item value="Reward" priority="0" />
+      <Item value="CreatedDate" priority="6" />
+      <Item value="ModifiedDate" priority="10" />
+      <Item value="DateTime`0" priority="1" />
+      <Item value="viewModel" priority="54" />
+      <Item value="Content`0" priority="0" />
+      <Item value="HttpGet" priority="0" />
+      <Item value="collection" priority="13" />
+      <Item value="static" priority="5" />
+      <Item value="key" priority="5" />
+      <Item value="type" priority="0" />
+      <Item value="_goalsClassId" priority="0" />
+      <Item value="GoalsRaceId" priority="0" />
+      <Item value="selectedClass" priority="15" />
+      <Item value="GoalsCharacterViewModel`0" priority="0" />
+      <Item value="entity" priority="1" />
+      <Item value="GoalsClassViewModel`0" priority="0" />
+      <Item value="GoalsSpellViewModel`0" priority="1" />
+      <Item value="GoalsEquipmentViewModel`0" priority="0" />
+      <Item value="GoalsRaceViewModel`0" priority="0" />
+      <Item value="options" priority="0" />
+      <Item value="AcceptAllChangesAfterSave" priority="0" />
+      <Item value="selectedRace" priority="9" />
+      <Item value="mergeOption" priority="0" />
+      <Item value="try" priority="1" />
+      <Item value="ArgumentNullException`0" priority="0" />
+      <Item value="GoalsCharacter" priority="1" />
+      <Item value="fixed" priority="0" />
+      <Item value="Added" priority="0" />
+      <Item value="EntityState`0" priority="0" />
+      <Item value="base" priority="0" />
+      <Item value="ActionResult`0" priority="0" />
+      <Item value="HttpPost" priority="0" />
+      <Item value="AddPower`0" priority="0" />
+      <Item value="characterId" priority="1" />
+      <Item value="powerId" priority="2" />
+      <Item value="powerEntity" priority="0" />
+      <Item value="GoalsPower`0" priority="1" />
+      <Item value="targePower" priority="5" />
+      <Item value="DefaultDateTimeValue`0" priority="2" />
+      <Item value="sourcePower" priority="5" />
+      <Item value="CharacterPower`0" priority="0" />
+      <Item value="partial" priority="1" />
+      <Item value="characterPowerLink" priority="2" />
+      <Item value="targetCharacter" priority="2" />
+      <Item value="View`0" priority="0" />
+      <Item value="PowerClass" priority="1" />
+      <Item value="where" priority="5" />
+      <Item value="GoalsPowerTemplateId" priority="1" />
+      <Item value="CharacterEquipment`0" priority="0" />
+      <Item value="GoalsEquipmentsController`0" priority="0" />
+      <Item value="Effects" priority="1" />
+      <Item value="sourceEquipment" priority="8" />
+      <Item value="EquipmentClass" priority="0" />
+      <Item value="Page" priority="1" />
+      <Item value="Rarity" priority="0" />
+      <Item value="Template" priority="1" />
+      <Item value="Type" priority="0" />
+      <Item value="GoalsEquipment" priority="0" />
+      <Item value="goalsEquipment" priority="4" />
+      <Item value="GoalsEquipmenTemplateId" priority="0" />
+      <Item value="GoalsSpell`0" priority="0" />
+      <Item value="CharacterSpell`0" priority="0" />
+      <Item value="GoalsSpell" priority="0" />
+      <Item value="GoalsSpellTemplateId" priority="0" />
+      <Item value="Action" priority="0" />
+      <Item value="sourceSpell" priority="12" />
+      <Item value="Bonus" priority="0" />
+      <Item value="Boost" priority="0" />
+      <Item value="Damage" priority="0" />
+      <Item value="LevelBonus" priority="0" />
+      <Item value="Range" priority="0" />
+      <Item value="School" priority="0" />
+      <Item value="StartingLevel" priority="0" />
+      <Item value="Uses" priority="0" />
+      <Item value="characterPower" priority="2" />
+      <Item value="Deleted" priority="0" />
+      <Item value="ValueType`0" priority="0" />
+      <Item value="targetPower" priority="1" />
+      <Item value="CharacterPower" priority="0" />
+      <Item value="GoalsPower" priority="0" />
+      <Item value="valueInt" priority="1" />
+      <Item value="powers" priority="3" />
+      <Item value="equipments" priority="0" />
+      <Item value="classPower" priority="1" />
+      <Item value="classEquipment" priority="1" />
+      <Item value="CharacterEquipments" priority="0" />
+      <Item value="racePower" priority="0" />
+      <Item value="raceFavoredClass" priority="1" />
+      <Item value="goalsClass" priority="0" />
+      <Item value="FirstOrDefault`1" priority="0" />
+      <Item value="goalsRaceMeta" priority="1" />
+      <Item value="property" priority="1" />
+      <Item value="object" priority="3" />
+      <Item value="ResetToDefault`0" priority="0" />
+      <Item value="class" priority="0" />
+      <Item value="ToSpacedString`0" priority="0" />
+      <Item value="obj" priority="0" />
+      <Item value="pdfDoc" priority="0" />
+      <Item value="sw" priority="0" />
+      <Item value="stringBuilder" priority="3" />
+      <Item value="System" priority="0" />
+      <Item value="Resources" priority="0" />
+      <Item value="Properties" priority="2" />
+      <Item value="Resources`0" priority="2" />
+      <Item value="text" priority="1" />
+      <Item value="StringBuilder`0" priority="3" />
+      <Item value="title" priority="1" />
+      <Item value="characterEquipment" priority="1" />
+      <Item value="ViewPage" priority="0" />
+      <Item value="equipment" priority="2" />
+      <Item value="body" priority="1" />
+      <Item value="continue" priority="0" />
+      <Item value="equipmentContainer" priority="1" />
+      <Item value="goalsSheet" priority="1" />
+      <Item value="htmlparser" priority="1" />
+      <Item value="StyleSheet" priority="0" />
+      <Item value="StyleSheet`0" priority="0" />
+      <Item value="style" priority="0" />
+      <Item value="UnauthorizedAccessException`0" priority="0" />
+      <Item value="void" priority="0" />
+      <Item value="filterContext" priority="5" />
+      <Item value="ConsoleKeyInfo`0" priority="0" />
+      <Item value="Nullable" priority="0" />
+      <Item value="EndExecute`0" priority="0" />
+      <Item value="orderby" priority="0" />
+      <Item value="GoalsClass" priority="0" />
+      <Item value="Response" priority="0" />
+      <Item value="db" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:GoalsCharacterSheet.Core.Entities.GoalsCharacter">
+      <Item value="GoalsCharacterId" priority="5" />
+      <Item value="Name" priority="3" />
+      <Item value="GoalsUser" priority="4" />
+      <Item value="GoalsUserReference" priority="0" />
+      <Item value="Alignment" priority="2" />
+      <Item value="BaseTraitClass" priority="1" />
+      <Item value="BaseTraitDefense" priority="1" />
+      <Item value="BaseTraitInitiative" priority="0" />
+      <Item value="BaseTraitStrength" priority="0" />
+      <Item value="BaseTraitToughness" priority="0" />
+      <Item value="CharacterEquipments" priority="6" />
+      <Item value="CharacterLevel" priority="1" />
+      <Item value="Cost" priority="2" />
+      <Item value="Fate" priority="3" />
+      <Item value="GoalsClassReference" priority="5" />
+      <Item value="GoalsClassId" priority="2" />
+      <Item value="CharacterPowers" priority="12" />
+      <Item value="CharacterSpells" priority="5" />
+      <Item value="GoalsRaceId" priority="2" />
+      <Item value="HitPoints" priority="2" />
+      <Item value="ModTraitClass" priority="1" />
+      <Item value="ModTraitDefense" priority="0" />
+      <Item value="ModTraitInitiative" priority="0" />
+      <Item value="ModTraitStrength" priority="0" />
+      <Item value="ModTraitToughness" priority="0" />
+      <Item value="Reward" priority="1" />
+      <Item value="Speed" priority="3" />
+      <Item value="GoalsClass" priority="12" />
+      <Item value="GoalsRace" priority="11" />
+      <Item value="GoalsRaceReference" priority="1" />
+      <Item value="EntityState" priority="1" />
+      <Item value="ModifiedDate" priority="0" />
+      <Item value="AddEquipment`0" priority="0" />
+      <Item value="GetType`0" priority="0" />
+      <Item value="RaceName" priority="0" />
+      <Item value="ClassName" priority="1" />
+      <Item value="TotalTraitStrength" priority="0" />
+      <Item value="TotalTraitToughness" priority="0" />
+      <Item value="TotalTraitInitiative" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:GoalsCharacterSheet.Core.Entities.CharacterEquipment">
+      <Item value="GoalsCharacter" priority="1" />
+      <Item value="GoalsEquipment" priority="5" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:GoalsCharacterSheet.Core.Entities.User">
+      <Item value="UserName" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:GoalsCharacterSheet.Web.Models.GoalsPowerViewModel">
+      <Item value="Model" priority="1" />
+      <Item value="Entity" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:GoalsCharacterSheet.Core.Entities.GoalsPower">
+      <Item value="EntityState" priority="0" />
+      <Item value="Id" priority="0" />
+      <Item value="GoalsPowerId" priority="3" />
+      <Item value="Name" priority="4" />
+      <Item value="Cost" priority="2" />
+      <Item value="CreatedDate" priority="0" />
+      <Item value="ModifiedDate" priority="0" />
+      <Item value="Damage" priority="4" />
+      <Item value="Effect" priority="4" />
+      <Item value="Notes" priority="3" />
+      <Item value="Page" priority="2" />
+      <Item value="Range" priority="2" />
+      <Item value="Template" priority="1" />
+      <Item value="Type" priority="2" />
+      <Item value="PowerClass" priority="0" />
+      <Item value="CharacterPowers" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:GoalsCharacterSheet.Core.Entities.GCSDatabaseEntities">
+      <Item value="GoalsPowers" priority="9" />
+      <Item value="DeleteObject`0" priority="2" />
+      <Item value="GoalsUsers" priority="2" />
+      <Item value="AddObject`0" priority="0" />
+      <Item value="AddToGoalsUsers`0" priority="0" />
+      <Item value="AddToGoalsCharacters`0" priority="0" />
+      <Item value="SaveChanges`0" priority="3" />
+      <Item value="Attach`0" priority="3" />
+      <Item value="ContextOptions" priority="0" />
+      <Item value="GoalsClasses" priority="2" />
+      <Item value="GoalsRaces" priority="0" />
+      <Item value="AcceptAllChanges`0" priority="0" />
+      <Item value="GoalsCharacters" priority="3" />
+      <Item value="CharacterPowers" priority="1" />
+      <Item value="CharacterEquipments" priority="1" />
+      <Item value="GoalsEquipments" priority="3" />
+      <Item value="GoalsSpells" priority="2" />
+      <Item value="CharacterSpells" priority="1" />
+      <Item value="ClassPowers" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Objects.ObjectQuery`1">
+      <Item value="CommandText" priority="0" />
+      <Item value="Where`0" priority="0" />
+      <Item value="Select`0" priority="0" />
+      <Item value="Context" priority="0" />
+      <Item value="Take`1" priority="0" />
+      <Item value="OrderBy`0" priority="0" />
+      <Item value="FirstOrDefault`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Linq.IQueryable`1">
+      <Item value="Skip`1" priority="0" />
+      <Item value="ToList`1" priority="4" />
+      <Item value="OrderBy`2" priority="0" />
+      <Item value="Max`2" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:GoalsCharacterSheet.Web.Controllers.BaseController`1">
+      <Item value="CanEdit" priority="2" />
+      <Item value="ModelState" priority="0" />
+      <Item value="RedirectToAction`0" priority="0" />
+      <Item value="Response" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Linq.IOrderedEnumerable`1">
+      <Item value="Where`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Reflection.PropertyInfo">
+      <Item value="PropertyType" priority="1" />
+      <Item value="Name" priority="3" />
+      <Item value="GetValue`0" priority="1" />
+      <Item value="SetValue`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
+      <Item value="OrderBy`2" priority="0" />
+      <Item value="Any`1" priority="0" />
+      <Item value="FirstOrDefault`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:GoalsCharacterSheet.Web.Models.Contracts.IDisplay">
+      <Item value="Fields" priority="3" />
+      <Item value="Id" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.Dictionary`2">
+      <Item value="Clear`0" priority="1" />
+      <Item value="Remove`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.KeyValuePair`2">
+      <Item value="Key" priority="3" />
+      <Item value="Value" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:GoalsCharacterSheet.Web.Models.GoalsCharacterViewModel">
+      <Item value="Entity" priority="56" />
+      <Item value="Id" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Objects.ObjectSet`1">
+      <Item value="FirstOrDefault`1" priority="4" />
+      <Item value="AddObject`0" priority="1" />
+      <Item value="Include`0" priority="10" />
+      <Item value="First`1" priority="0" />
+      <Item value="DeleteObject`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:GoalsCharacterSheet.Core.Entities.GoalsUser">
+      <Item value="Name" priority="0" />
+      <Item value="UserName" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:GoalsCharacterSheet.Web.Controllers.GoalsCharactersController">
+      <Item value="User" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Security.Principal.IPrincipal">
+      <Item value="Identity" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Security.Principal.IIdentity">
+      <Item value="Name" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.DateTime">
+      <Item value="Now" priority="1" />
+      <Item value="UtcNow" priority="8" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Objects.DataClasses.EntityReference`1">
+      <Item value="Load`0" priority="2" />
+      <Item value="Value" priority="1" />
+      <Item value="Attach`0" priority="1" />
+      <Item value="RelationshipSet" priority="0" />
+      <Item value="IsLoaded" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Mvc.FormCollection">
+      <Item value="GetValue`0" priority="2" />
+      <Item value="Get`0" priority="2" />
+      <Item value="GetInt`0" priority="1" />
+      <Item value="HasKeys`0" priority="2" />
+      <Item value="Keys" priority="0" />
+      <Item value="AllKeys" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Mvc.ValueProviderResult">
+      <Item value="ConvertTo`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:GoalsCharacterSheet.Core.Entities.GoalsClass">
+      <Item value="Id" priority="2" />
+      <Item value="GoalsClassId" priority="6" />
+      <Item value="RaceFavoredClasses" priority="1" />
+      <Item value="ClassEquipments" priority="0" />
+      <Item value="StartingHitPoints" priority="0" />
+      <Item value="GoalsCharacters" priority="0" />
+      <Item value="BaseClass" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:GoalsCharacterSheet.Core.Entities.GoalsRace">
+      <Item value="GoalsRaceId" priority="0" />
+      <Item value="RacePowers" priority="0" />
+      <Item value="Movement" priority="0" />
+      <Item value="RaceFavoredClasses" priority="0" />
+      <Item value="GoalsRaceMetas" priority="2" />
+      <Item value="Notes" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Objects.DataClasses.EntityCollection`1">
+      <Item value="Load`0" priority="5" />
+      <Item value="RelationshipSet" priority="0" />
+      <Item value="First`1" priority="3" />
+      <Item value="Add`0" priority="3" />
+      <Item value="Count" priority="6" />
+      <Item value="Select`2" priority="1" />
+      <Item value="OrderBy`2" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Data.EntityState">
+      <Item value="Deleted" priority="0" />
+      <Item value="Detached" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Format`0" priority="2" />
+      <Item value="Empty" priority="7" />
+      <Item value="IsNullOrWhiteSpace`0" priority="1" />
+      <Item value="IsNullOrEmpty`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:GoalsCharacterSheet.Core.Entities.CharacterPower">
+      <Item value="GoalsCharacter" priority="1" />
+      <Item value="GoalsPower" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:GoalsCharacterSheet.Web.Models.GoalsEquipmentViewModel">
+      <Item value="Entity" priority="3" />
+      <Item value="Fields" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:GoalsCharacterSheet.Core.Entities.GoalsEquipment">
+      <Item value="GoalsEquipmentId" priority="5" />
+      <Item value="Cost" priority="1" />
+      <Item value="Effects" priority="1" />
+      <Item value="EquipmentClass" priority="0" />
+      <Item value="Name" priority="3" />
+      <Item value="Page" priority="0" />
+      <Item value="Rarity" priority="0" />
+      <Item value="Type" priority="0" />
+      <Item value="EntityState" priority="0" />
+      <Item value="ClassEquipments" priority="0" />
+      <Item value="CharacterEquipments" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:GoalsCharacterSheet.Core.Entities.GoalsSpell">
+      <Item value="School" priority="1" />
+      <Item value="GoalsSpellId" priority="1" />
+      <Item value="Action" priority="0" />
+      <Item value="Bonus" priority="2" />
+      <Item value="Damage" priority="2" />
+      <Item value="Effects" priority="1" />
+      <Item value="LevelBonus" priority="3" />
+      <Item value="Name" priority="1" />
+      <Item value="Page" priority="0" />
+      <Item value="Range" priority="0" />
+      <Item value="StartingLevel" priority="0" />
+      <Item value="Uses" priority="0" />
+      <Item value="Boost" priority="2" />
+      <Item value="CharacterSpells" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:GoalsCharacterSheet.Core.Entities.RaceFavoredClass">
+      <Item value="GoalsClass" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:GoalsCharacterSheet.Core.Entities.CharacterSpell">
+      <Item value="GoalsSpell" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Int32">
+      <Item value="TryParse`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:GoalsCharacterSheet.Core.Entities.ClassPower">
+      <Item value="GoalsClass" priority="1" />
+      <Item value="GoalsPower" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:GoalsCharacterSheet.Core.Entities.ClassEquipment">
+      <Item value="GoalsEquipment" priority="1" />
+      <Item value="GoalsClass" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:GoalsCharacterSheet.Core.Entities.RacePower">
+      <Item value="GoalsPower" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Type">
+      <Item value="GetProperties`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:GoalsCharacterSheet.Core.Entities.GoalsRaceMeta">
+      <Item value="PropertyName" priority="0" />
+      <Item value="Value" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:iTextSharp.text.Document">
+      <Item value="AddSubject`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Text.StringBuilder">
+      <Item value="AppendLine`0" priority="3" />
+      <Item value="ToString`0" priority="4" />
+      <Item value="Replace`0" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@GoalsCharacterSheet.Web.Properties.Resources">
+      <Item value="GoalsSheetTemplate" priority="0" />
+      <Item value="GoalsEffectsTemplate" priority="0" />
+      <Item value="GoalsEffectsTitleItem" priority="0" />
+      <Item value="GoalsEffectsBodyItemTemplate" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Int32">
+      <Item value="ToString`0" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="Or`0" priority="1" />
+      <Item value="Replace`0" priority="2" />
+      <Item value="ToSpacedString`0" priority="0" />
+      <Item value="Trim`0" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Object">
+      <Item value="ToString`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:GoalsCharacterSheet.Web.Models.GoalsSpellViewModel">
+      <Item value="Entity" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:iTextSharp.text.html.simpleparser.HTMLWorker">
+      <Item value="SetStyleSheet`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:EvoPdf.PdfConverter">
+      <Item value="GetPdfBytesFromHtmlString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Mvc.ActionExecutingContext">
+      <Item value="ActionDescriptor" priority="0" />
+      <Item value="ActionParameters" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Mvc.ActionDescriptor">
+      <Item value="ActionName" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IDictionary`2">
+      <Item value="ContainsKey`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Mvc.ModelStateDictionary">
+      <Item value="AddModelError`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Mvc.ExceptionContext">
+      <Item value="Exception" priority="0" />
+      <Item value="RequestContext" priority="0" />
+      <Item value="ExceptionHandled" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Exception">
+      <Item value="Message" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.HttpResponseBase">
+      <Item value="Clear`0" priority="0" />
+      <Item value="RedirectToRoute`0" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

@@ -1,0 +1,81 @@
+﻿@model GoalsCharacterSheet.Web.Models.GoalsCharacterViewModel
+<fieldset id="GoalsSpells">
+    <legend>Spells</legend>
+    <div class="btn-group">
+        <button id="AddSpell" type="button" class="btn">
+            Add</button>
+    </div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th style="display: none;">
+                    Id
+                </th>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Level
+                </th>
+                <th>
+                    Action
+                </th>
+                <th>
+                    Range
+                </th>
+                <th>
+                    Uses
+                </th>
+                <th>
+                    Page #
+                </th>
+                <th>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.Entity.CharacterSpells.Count() == 0)
+            { 
+                <tr>
+                    <td colspan="8">
+                        No Spells
+                    </td>
+                </tr>
+            }
+            @foreach (var item in Model.Entity.CharacterSpells.OrderBy(x=>x.GoalsSpell.Name))
+            {
+                <tr>
+                    <td style="display: none;">
+                        <input type="hidden" class="rowId" value="@item.GoalsSpell.Id" />
+                    </td>
+                    <td>
+                        @item.GoalsSpell.Name
+                    </td>
+                    <td>
+                        @item.GoalsSpell.StartingLevel
+                    </td>
+                    <td>
+                        @item.GoalsSpell.Action
+                    </td>
+                    <td>
+                        @item.GoalsSpell.Range
+                    </td>
+                    <td>
+                        @item.GoalsSpell.Uses
+                    </td>
+                    <td>
+                        @item.GoalsSpell.Page
+                    </td>
+                    <td>
+                        <div class="btn-group">
+                            <button type="button" class="rowDetails btn">
+                                Details</button>
+                            <button type="button" class="removeRow btn">
+                                Remove</button>
+                        </div>
+                    </td>
+                </tr>  
+            }
+        </tbody>
+    </table>
+</fieldset>

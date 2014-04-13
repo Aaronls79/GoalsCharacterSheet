@@ -1,0 +1,22 @@
+﻿@model GoalsCharacterSheet.Web.Models.GoalsCharacterViewModel
+@section title {
+Character Sheet
+}
+@section info {@ViewBag.Message}
+<form id="@string.Format("{0}Edit",ControllerName)" class="row" method="post" action="/GoalsCharacters/Create">
+<input name="Id" id="Id" type="hidden" value="@Model.Id" />
+@{Html.RenderPartial("Partials/BasicDetails", Model);}
+@{Html.RenderPartial("Partials/Traits", Model);}
+@{Html.RenderPartial("Partials/Powers", Model);}
+@{Html.RenderPartial("Partials/Equipment", Model);}
+@{Html.RenderPartial("Partials/Spells", Model);}
+<div class="navbar navbar-fixed-bottom form-actions">
+    <button type="button" class="save btn btn-primary">
+        Save</button>
+    <button id="Print" type="button" class="btn">
+        Print</button>
+    <span style="display:none;" class="goalsInfo label label-success offset6"></span>
+    <button type="button" class="btn cancel pull-right">
+        Close</button>
+</div>
+</form>

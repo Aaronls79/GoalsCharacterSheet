@@ -1,0 +1,1 @@
+<strong class="pad-left">{Name}:</strong><span class="pad-left">{Value}</span>

@@ -1,0 +1,30 @@
+﻿@using GoalsCharacterSheet.Web.Models.Contracts;
+@using GoalsCharacterSheet.Web.Runtime;
+@model IEdit
+<form id="@string.Format("{0}Edit", ControllerName)" class="row">
+<fieldset>
+    <legend>@Title</legend>
+    @foreach (var field in Model.EditableFields)
+    {
+        if (field.Key == "Id")
+        {
+            <input class="span8" name="@field.Key" type="hidden" value="@field.value" />
+        }
+        else
+        {
+        <div class="control-group">
+            <label class="span8" for="@field.Key">@field.Key.ToSpacedString()</label>
+            <div class="controls">
+                <input class="span8" name="@field.Key" type="text" value="@field.Value" /> 
+            </div>
+        </div>
+        }                    
+    }
+</fieldset>
+<div class="form-actions">
+    <button type="submit" class="btn btn-primary">
+        Save</button>
+    <button type="submit" class="btn">
+        Cancel</button>
+</div>
+</form>

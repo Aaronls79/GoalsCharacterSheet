@@ -1,0 +1,23 @@
+﻿@using GoalsCharacterSheet.Web.Models.Contracts;
+@using GoalsCharacterSheet.Web.Runtime;
+@model IDisplay
+<form id="@string.Format("{0}Delete", ControllerName)" class="row">
+<fieldset>
+    <legend>@Title</legend>
+    @for (int i = 0; i < Model.Fields.Count; i++)
+    {
+        <div class="control-group">
+            <label class="span8" for="@Model.Fields[i].Key">@Model.Fields[i].Key.ToSpacedString()</label>
+            <div class="controls">
+                <span class="span8">@Model.Fields[i].Value</span>
+            </div>
+        </div>
+    }
+</fieldset>
+<div class="form-actions">
+    <button type="submit" class="btn btn-primary">
+        Delete</button>
+    <button type="submit" class="btn">
+        Cancel</button>
+</div>
+</form>

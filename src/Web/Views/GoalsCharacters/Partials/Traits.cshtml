@@ -1,0 +1,74 @@
+﻿@model GoalsCharacterSheet.Web.Models.GoalsCharacterViewModel
+<fieldset id="GoalsTraits">
+    <legend>Traits</legend>
+    <div class="control-group span12">
+        <label for="class">
+            Class</label>
+        <div class="controls">
+            <div class="input-prepend">
+                <span class="add-on">Base</span>
+                <input class="span2" id="BaseTraitClass" name="BaseTraitClass" type="number" value="@Model.Entity.BaseTraitClass" />
+                <span class="add-on">Mod</span>
+                <input class="span2" id="ModTraitClass" name="ModTraitClass" type="number" value="@Model.Entity.ModTraitClass" />
+                <span class="add-on">Total</span>
+                <input class="span2" id="TotalTraitClass" type="text" value="@(Model.Entity.BaseTraitClass + Model.Entity.ModTraitClass)" disabled />
+            </div>
+        </div>
+    </div>
+    <div class="control-group span12">
+        <label for="strength">
+            Strength</label>
+        <div class="controls">
+            <div class="input-prepend">
+                <span class="add-on">Base</span>
+                <input class="span2" id="BaseTraitStrength" name="BaseTraitStrength" type="number" value="@Model.Entity.BaseTraitStrength" />
+                <span class="add-on">Mod</span>
+                <input class="span2" id="ModTraitStrength" name="ModTraitStrength" type="number" value="@Model.Entity.ModTraitStrength" />
+                <span class="add-on">Total</span>
+                <input class="span2" id="TotalTraitStrength" type="text" value="@(Model.Entity.BaseTraitStrength + Model.Entity.ModTraitStrength)" disabled />
+            </div>
+        </div>
+    </div>
+    <div class="control-group span12">
+        <label for="defense">
+            Defense</label>
+        <div class="controls">
+            <div class="input-prepend">
+                <span class="add-on">Base</span>
+                <input class="span2" id="BaseTraitDefense" name="BaseTraitDefense" type="number" value="@Model.Entity.BaseTraitDefense" />
+                <span class="add-on">Mod</span>
+                <input class="span2" id="ModTraitDefense"  name="ModTraitDefense" type="number" value="@Model.Entity.ModTraitDefense" />
+                <span class="add-on">Total</span>
+                <input class="span2" id="TotalTraitDefense" type="text" value="@(Model.Entity.BaseTraitDefense + Model.Entity.ModTraitDefense)" disabled />
+            </div>
+        </div>
+    </div>
+    <div class="control-group span12">
+        <label for="toughness">
+            Toughness</label>
+        <div class="controls">
+            <div class="input-prepend">
+                <span class="add-on">Base</span>
+                <input class="span2" id="BaseTraitToughness" name="BaseTraitToughness" type="number" value="@Model.Entity.BaseTraitToughness" />
+                <span class="add-on">Mod</span>
+                <input class="span2" id="ModTraitToughness" name="ModTraitToughness" type="number" value="@Model.Entity.ModTraitToughness" />
+                <span class="add-on">Total</span>
+                <input class="span2" id="TotalTraitToughness" type="text" value="@(Model.Entity.BaseTraitToughness + Model.Entity.ModTraitToughness)" disabled />
+            </div>
+        </div>
+    </div>
+    <div class="control-group span12">
+        <label for="initiative">
+            Initiative</label>
+        <div class="controls">
+            <div class="input-prepend">
+                <span class="add-on">Base</span>
+                <input class="span2" id="BaseTraitInitiative" name="BaseTraitInitiative" type="text" value="@Model.Entity.CalculatedBaseInitiative()" disabled />
+                <span class="add-on">Mod</span>
+                <input class="span2" id="ModTraitInitiative" name="ModTraitInitiative" type="number" value="@Model.Entity.ModTraitInitiative" />
+                <span class="add-on">Total</span>
+                <input class="span2" id="TotalTraitInitiative" type="text" value="@(Model.Entity.CalculatedBaseInitiative() + Model.Entity.ModTraitInitiative)" disabled />
+            </div>
+        </div>
+    </div>
+</fieldset>

@@ -1,0 +1,6 @@
+C:\Users\Aaron\SkyDrive\AaronApps\GoalsCharacterSheet\src\Core\bin\Release\GoalsCharacterSheet.Core.dll.config
+C:\Users\Aaron\SkyDrive\AaronApps\GoalsCharacterSheet\src\Core\bin\Release\GoalsCharacterSheet.Core.dll
+C:\Users\Aaron\SkyDrive\AaronApps\GoalsCharacterSheet\src\Core\bin\Release\GoalsCharacterSheet.Core.pdb
+C:\Users\Aaron\SkyDrive\AaronApps\GoalsCharacterSheet\src\Core\obj\Release\GoalsCharacterSheet.Core.dll
+C:\Users\Aaron\SkyDrive\AaronApps\GoalsCharacterSheet\src\Core\obj\Release\GoalsCharacterSheet.Core.pdb
+C:\Users\Aaron\SkyDrive\AaronApps\GoalsCharacterSheet\src\Core\obj\Release\Core.csprojResolveAssemblyReference.cache

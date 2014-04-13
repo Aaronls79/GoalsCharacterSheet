@@ -1,0 +1,6 @@
+<ul class="unstyled" style="width: 100%;">
+    <li>
+		{EffectTitle}
+    </li>
+    {EffectBody}
+</ul>

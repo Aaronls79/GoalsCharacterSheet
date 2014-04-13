@@ -1,0 +1,13 @@
+﻿@model ICollection<AuthenticationClientData>
+<form action="/Account/ExternalLogin?ReturnUrl=@ViewBag.ReturnUrl" method="post" class="row">
+@Html.AntiForgeryToken()
+<fieldset id="socialLoginList">
+    <legend>Sign In</legend>
+    <div class="">
+        @foreach (AuthenticationClientData p in Model)
+        {
+            <button class="btn btn-info btn-large" type="submit" name="provider" value="@p.AuthenticationClient.ProviderName" title="Log in using your @p.DisplayName account">@p.DisplayName</button>
+        }
+    </div>
+</fieldset>
+</form>

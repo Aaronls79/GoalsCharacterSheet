@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Delves Character Sheet</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/themes/base/css")
+</head>
+<body style="padding: 40px;">
+    <input id="ControllerName" type="hidden" value="@ControllerName" />
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <a class="brand" href="/Home/Index">GoalSystem, Delves - Character Sheet</a>
+            <form class="nav" style="padding-top:9px;" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="PFGJ25F5NVUVJ">
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </form>
+
+            @if (this.User.Identity.IsAuthenticated)
+            {
+                <ul class="nav pull-right">
+                    <li><a href="/Account/LogOff">Sign Out</a></li>
+                </ul>
+            }
+        </div>
+        <div id="GoalsError">
+            @if (!ViewData.ModelState.IsValid)
+            {
+                <div class="alert alert-danger">
+                    <button type="button" class="close" data-dismiss="alert">
+                        &times;</button>
+                    @foreach (var item in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                    {
+                        <p>
+                            @item.ErrorMessage
+                        </p>
+                    }
+                </div>
+            }
+        </div>
+    </div>
+    <div class="container" id="page-header">
+        <div class="row">
+            <h1>@RenderSection("title", required: true)</h1>
+        </div>
+    </div>
+    <div class="container" id="page-body">
+        <div class="row">
+            <p class="well">
+                @RenderSection("Info", required: false)
+            </p>
+        </div>
+        @RenderBody()
+    </div>
+    <div class="container" id="page-footer">
+        <div class="row">
+			<script type="text/javascript"><!--
+			google_ad_client = "ca-pub-1140943179578086";
+			/* GoalsSheet.com v2 */
+			google_ad_slot = "8376617358";
+			google_ad_width = 728;
+			google_ad_height = 90;
+			//-->
+			</script>
+			<script type="text/javascript"
+			src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+			</script>
+            <p class="span4 offset8">
+                &copy; @DateTime.Now.Year - <a href="http://www.aaronsprague.com/">Aaron Sprague</a></p>
+        </div>
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryui")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/Goals")
+    <script type="text/javascript" language="javascript" src='/Scripts/views/@string.Format("{0}.js", ControllerName)'></script>
+    @RenderSection("script", required: false)
+</body>
+</html>

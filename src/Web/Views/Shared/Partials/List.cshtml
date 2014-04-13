@@ -1,0 +1,70 @@
+﻿
+@using GoalsCharacterSheet.Web.Models.Contracts;
+@using GoalsCharacterSheet.Web.Runtime;
+@model List<IDisplay>
+<fieldset id="@string.Format("{0}List", ControllerName)">
+    <legend>@Title</legend>
+    @if (CanEdit)
+    {
+        <div class="btn-group">
+            <button id="create" type="button" class="btn create">
+                Create</button>
+        </div>
+    }
+    @if (Model.Count <= 0)
+    {
+        <p class="lead">No @Title</p>   
+    }
+    else
+    {
+        var first = Model[0];
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th style="display: none;">
+                        Id
+                    </th>
+                    <th>Name</th>
+                    @foreach (var field in first.Fields)
+                    {
+                        if (field.Key == "Name") { continue; }
+                        <th>@field.Key.ToSpacedString()
+                        </th>
+                    }
+                    @if (CanEdit)
+                    {
+                        <th>
+                        </th>
+                    }
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td style="display: none;">
+                            <input type="hidden" class="rowId" value="@item.Id" />
+                        </td>
+                        <td>@item.Fields["Name"]</td>
+                        @foreach (var field in item.Fields)
+                        {
+                            if (field.Key == "Name") { continue; }
+                            <td>@field.Value</td>
+                        }
+                        @if (CanEdit)
+                        {
+                            <td>
+                                <div class="btn-group">
+                                    <button type="button" class="btn edit">
+                                        Edit</button>
+                                    <button type="button" class="btn remove">
+                                        Remove</button>
+                                </div>
+                            </td>
+                        }
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+</fieldset>
