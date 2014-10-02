@@ -4,10 +4,16 @@ Goals Character Sheet was a learning experiment the project itself I limited to 
 
 Main Framework:
 src\Web\Scripts\GoalsCore.js
+
 src\Web\Models\ViewModel.cs
+
 src\Web\Controllers\BaseController.cs
+
 src\Web\Views\Shared\Partials
 
 Example Usage:
+
 src\Web\Controllers\GoalsClassesController.cs
+
 src\Web\Models\GoalsClassViewModel.cs
+
